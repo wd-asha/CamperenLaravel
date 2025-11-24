@@ -1,0 +1,21 @@
+<svg class="qodef-svg-pins" width="387px" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 386.6 387.1" xml:space="preserve">
+<style>.qodef-svg-pins-pin {fill:none;stroke:#000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<path class="qodef-svg-pins-path" d="M68.3 328.4s37.9 1.7 54-6.5c40.7-20.8 48.2-50.6 58.4-51.8 7.5-.9 46.2 26.1 54.8 28 12.4 2.8 34.5-22.8 53.2-48.8 19.3-26.9 13.6-42.5 13.6-42.5" fill="none" stroke="#446851" stroke-width="2" stroke-dasharray="2,2"></path>
+<path class="qodef-svg-pins-path-fake" d="M68.3 328.4s37.9 1.7 54-6.5c40.7-20.8 48.2-50.6 58.4-51.8 7.5-.9 46.2 26.1 54.8 28 12.4 2.8 34.5-22.8 53.2-48.8 19.3-26.9 13.6-42.5 13.6-42.5" fill="none" stroke="#f5f5f4" stroke-width="5" stroke-dasharray="320"></path>
+<g class="qodef-svg-pins-three">
+<path class="qodef-svg-pins-pin" d="M190.9 248c0 9.3-12 17.3-12 17.3s-12-8-12-17.3c0-6.6 5.4-12 12-12 6.7 0 12 5.4 12 12z"></path>
+<path class="qodef-svg-pins-pin" d="M183 248c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4z"></path>
+</g>
+<g class="qodef-svg-pins-one">
+<path class="qodef-svg-pins-pin" d="M314.2 185.3c0 9.3-12 17.3-12 17.3s-12-8-12-17.3c0-6.6 5.4-12 12-12 6.7.1 12 5.4 12 12z"></path>
+<path class="qodef-svg-pins-pin" d="M306.2 185.3c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4c2.3 0 4 1.8 4 4z"></path>
+</g>
+<g class="qodef-svg-pins-two">
+<path class="qodef-svg-pins-pin" d="M250 275.3c0 9.3-12 17.3-12 17.3s-12-8-12-17.3c0-6.6 5.4-12 12-12s12 5.4 12 12z"></path>
+<path class="qodef-svg-pins-pin" d="M242 275.3c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4z"></path>
+</g>
+<g class="qodef-svg-pins-four">
+<path class="qodef-svg-pins-pin" d="M80.2 307.6c0 9.3-12 17.3-12 17.3s-12-8-12-17.3c0-6.6 5.4-12 12-12s12 5.4 12 12z"></path>
+<path class="qodef-svg-pins-pin" d="M72.2 307.6c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4c2.3 0 4 1.8 4 4z"></path>
+</g>
+</svg>

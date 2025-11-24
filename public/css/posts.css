@@ -1,0 +1,294 @@
+.slide__text_posts {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+.slide__posts-title {
+    font-size: 4rem;
+    line-height: 3.66rem;
+    margin-bottom: 2rem;
+    color: white;
+    transform: translateX(0);
+    transition: 1s;
+    opacity: 1;
+    visibility: visible;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.slide__posts_subtitle {
+    font-size: 1.2rem;
+    line-height: 1.66rem;
+    margin-bottom: 2rem;
+    color: white;
+    padding-left: 50%;
+}
+
+.posts__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 6rem 0 0 0;
+}
+
+.posts__header_caption {
+    width: 46.66%;
+}
+
+.posts__header_title {
+    font-family: 'Prompt Bold', sans-serif;
+    font-size: 4.66rem;
+    line-height: 4.66rem;
+    text-align: right;
+    color: rgba(0, 0, 0, .1);
+    letter-spacing: .066rem;
+}
+
+.posts__header_subtitle {
+    font-family: 'Prompt SemiBold', sans-serif;
+    font-size: 1.66rem;
+    line-height: 1.66rem;
+    color: rgba(0, 0, 0, .8);
+    transform: translateY(-30%);
+    text-align: right;
+}
+
+.posts__header_text {
+    width: 46.66%;
+    margin-bottom: 4rem;
+}
+
+.posts__header_text p {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: 1rem;
+    line-height: 1.66rem;
+    padding: 1.33rem 0 0 0;
+    color: rgba(0, 0, 0, .66);
+    text-align: left;
+}
+
+.post__header {
+    position: relative;
+    margin-top: .33rem;
+}
+
+.post__header img {
+    width: 100%;
+}
+
+.post {
+    width: 100%;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.post__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #345E41;
+    padding: 1rem 1rem;
+    width: auto;
+    height: auto;
+    border: 1px solid rgba(200, 200, 200, .8);
+}
+
+.post__date {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: white;
+}
+
+.post__bred {
+    text-align: left;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    padding: 1rem 0 1rem 0;
+    color: rgba(0, 0, 0, .66);
+}
+
+.post__title {
+    text-align: left;
+    font-family: 'Prompt SemiBold', sans-serif;
+    font-size: 2.66rem;
+    line-height: 2.66rem;
+    padding: 0 0 2rem 0;
+    color: rgba(0, 0, 0, .8);
+}
+
+.post__subtitle {
+    text-align: left;
+    font-family: 'Prompt SemiBold', sans-serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 0 0 2rem 0;
+    color: rgba(0, 0, 0, .8);
+}
+
+.post__text {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding: 0 0 2rem 0;
+    color: rgba(0, 0, 0, .66);
+    column-count: 2;
+    column-gap: 4rem;
+}
+
+.post__text_cit {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 0 0 2rem 0;
+    color: rgba(0, 0, 0, .66);
+    width: 75%;
+    margin: 0 auto;
+}
+
+.post__images {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.post__images img {
+   width: 48%;
+    height: auto;
+}
+
+.author {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    background-color: rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author__image {
+    width: 8%;
+}
+
+.author__image img {
+    width: 100%;
+}
+
+.author__content {
+    width: 92%;
+    padding-left: 1rem;
+}
+
+.author__name {
+    text-align: left;
+    font-family: 'Prompt SemiBold', sans-serif;
+    font-size: 1.33rem;
+    line-height: 1.33rem;
+    padding: 0 0 .66rem 0;
+    color: rgba(0, 0, 0, .7);
+}
+
+.author__text {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding: 0;
+    color: rgba(0, 0, 0, .66);
+}
+
+.comments {
+    padding: 2rem 0 .5rem 0;
+    font-family: 'Prompt SemiBold', sans-serif;
+    font-size: 1.66rem;
+    line-height: 1.66rem;
+}
+
+.subcomments {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .8rem;
+    line-height: .8rem;
+    padding: 0;
+    color: rgba(0, 0, 0, .66);
+}
+
+.comment__form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+}
+
+.comment__form .comment {
+    width: 66%;
+    padding: 2rem 1rem 0 0;
+}
+
+.comment__form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 6rem;
+    padding: .5rem .66rem;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.33rem;
+    color: rgba(0, 0, 0, .66);
+    outline: none;
+    border: 1px solid gray;
+}
+
+.comment__form .inputs {
+    padding: 2rem 0 0 0;
+    width: 33%;
+}
+
+.post-input {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.33rem;
+    color: rgba(0, 0, 0, .66);
+    outline: none;
+    border: 1px solid gray;
+    padding: .5rem .66rem;
+}
+
+.check {
+    width: 100%;
+    margin-bottom: .66rem;
+}
+
+.check label {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.33rem;
+    color: rgba(0, 0, 0, .33);
+    text-transform: lowercase;
+}
+
+.post-image-wrapper {
+    width: 100%;
+    height: 55vh; /* или 66% от высоты картинки, но vh обычно удобнее */
+    overflow: hidden;
+    position: relative;
+}
+
+.post-image-wrapper img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%); /* Обрезаем сверху и снизу, оставляя центр */
+}

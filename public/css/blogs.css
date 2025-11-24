@@ -1,0 +1,175 @@
+.blogs__title {
+    font-family: 'Prompt Bold', sans-serif;
+    font-size: 5.66rem;
+    line-height: 5.66rem;
+    text-align: left;
+    color: rgba(0, 0, 0, .1);
+    letter-spacing: .066rem;
+    padding-top: 6rem;
+}
+@media (max-width: 1280px) {
+    .blogs__title {
+        font-size: calc(2.66rem + (5.66 - 2.66) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(2.66rem + (5.66 - 2.66) * ((100vw - 20rem) / (71.11 - 20)));
+        padding-top: calc(1.66rem + (6 - 1.66) * ((100vw - 20rem) / (71.11 - 20)));
+    }
+}
+@media (max-width: 700px) {
+    .blogs__title {
+        text-align: center;
+    }
+}
+
+.blogs__caption {
+    font-family: 'Prompt SemiBold', sans-serif;
+    font-size: 2.33rem;
+    line-height: 2.33rem;
+    color: rgba(0, 0, 0, .8);
+    transform: translateY(-80%);
+    text-align: left;
+}
+@media (max-width: 1280px) {
+    .blogs__caption {
+        font-size: calc(1.15rem + (2.33 - 1.15) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(1rem + (2.33 - 1) * ((100vw - 20rem) / (71.11 - 20)));
+    }
+}
+@media (max-width: 700px) {
+    .blogs__caption {
+        text-align: center;
+    }
+}
+
+.blogs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 1rem 0 2rem 0;
+}
+@media (max-width: 1280px) {
+    .blogs {
+        padding: calc(.01rem + (1 - .01) * ((100vw - 20rem) / (71.11 - 20))) 0
+        calc(.66rem + (2 - .66) * ((100vw - 20rem) / (71.11 - 20))) 0;
+    }
+}
+
+.blog {
+    width: 31%;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+@media (max-width: 1280px) {
+    .blog {
+        margin-bottom: calc(1.8rem + (4 - 1.8) * ((100vw - 20rem) / (71.11 - 20)));
+        margin-top: calc(.33rem + (1 - .33) * ((100vw - 20rem) / (71.11 - 20)));
+    }
+}
+@media (max-width: 700px) {
+    .blog {
+        width: 100%;
+    }
+}
+
+.blog__image {
+    width: 100%;
+    position: relative;
+}
+
+.blog__image img {
+    width: 100%;
+}
+
+.blog__date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    background-color: #345E41;
+    color: white;
+    padding: .66rem 1rem;
+}
+@media (max-width: 1280px) {
+    .blog__date {
+        font-size: calc(.6rem + (1 - .6) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(1rem + (1 - 1) * ((100vw - 20rem) / (71.11 - 20)));
+        padding: calc(.33rem + (.66 - .33) * ((100vw - 20rem) / (71.11 - 20)))
+        calc(.66rem + (1 - .66) * ((100vw - 20rem) / (71.11 - 20)));
+    }
+}
+
+.blog__bred {
+    text-align: left;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1rem;
+    padding: 1.33rem 0 .33rem 0;
+    color: rgba(0, 0, 0, .66);
+}
+@media (max-width: 1280px) {
+    .blog__bred {
+        font-size: calc(.5rem + (.8 - .5) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(1rem + (1 - 1) * ((100vw - 20rem) / (71.11 - 20)));
+        padding: calc(.33rem + (1.33 - .33) * ((100vw - 20rem) / (71.11 - 20))) 0 .33rem 0;
+    }
+}
+
+.blog__title {
+    text-align: left;
+    font-family: 'Prompt SemiBold', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 0 0 1rem 0;
+    color: rgba(0, 0, 0, .8);
+}
+@media (max-width: 1280px) {
+    .blog__title {
+        font-size: calc(1.1rem + (1.5 - 1.1) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(1rem + (1.5 - 1) * ((100vw - 20rem) / (71.11 - 20)));
+        padding: 0 0 calc(.66rem + (1 - .66) * ((100vw - 20rem) / (71.11 - 20))) 0;
+    }
+}
+
+.blog__text {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding: 0 0 1.66rem 0;
+    color: rgba(0, 0, 0, .66);
+}
+@media (max-width: 1280px) {
+    .blog__text {
+        font-size: calc(.6rem + (.9 - .6) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(1rem + (1.5 - 1) * ((100vw - 20rem) / (71.11 - 20)));
+        padding: 0 0 calc(.66rem + (1.66 - .66) * ((100vw - 20rem) / (71.11 - 20))) 0;
+    }
+}
+
+.blog__link {
+    padding: .66rem 1.66rem;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .8rem;
+    line-height: .8rem;
+    border: 1px solid #345E41;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .8);
+}
+@media (max-width: 1280px) {
+    .blog__link {
+        font-size: calc(.6rem + (.8 - .6) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(.6rem + (.8 - .6) * ((100vw - 20rem) / (71.11 - 20)));
+        padding: calc(.33rem + (.66 - .33) * ((100vw - 20rem) / (71.11 - 20)))
+        calc(1rem + (1.66 - 1) * ((100vw - 20rem) / (71.11 - 20)));
+    }
+}
+
+.blog__link:hover {
+    background-color: #345E41;
+    color: white;
+}

@@ -1,0 +1,104 @@
+.bg-accommodation {
+    background-color: rgba(68, 104, 65, .133);
+}
+
+.accommodation {
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+@media (max-width: 1280px) {
+    .accommodation {
+        padding: calc(2rem + (4 - 2) * ((100vw - 20rem) / (71.11 - 20))) 0;
+    }
+}
+@media (max-width: 600px) {
+    .accommodation {
+        padding-bottom: 0;
+    }
+}
+
+.accommodation__item {
+    width: 31%;
+}
+@media (max-width: 600px) {
+    .accommodation__item {
+        width: 98%;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 350px) {
+    .accommodation__item {
+        margin-bottom: 1rem;
+    }
+}
+
+
+.accommodation__image {
+    width: 100%;
+}
+
+.accommodation__image img {
+    width: 100%;
+}
+
+.accommodation__title {
+    font-family: 'Prompt SemiBold', sans-serif;
+    font-size: 1.33rem;
+    line-height: 1.33rem;
+    padding: 1.33rem 0 .66rem 0;
+    color: rgba(0, 0, 0, .8);
+    text-align: center;
+}
+@media (max-width: 1280px) {
+    .accommodation__title {
+        font-size: calc(1rem + (1.33 - 1) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(1rem + (1.33 - 1) * ((100vw - 20rem) / (71.11 - 20)));
+        padding: calc(.1rem + (1.33 - .1) * ((100vw - 20rem) / (71.11 - 20))) 0
+        calc(.33rem + (.66 - .33) * ((100vw - 20rem) / (71.11 - 20))) 0;
+    }
+}
+@media (max-width: 600px) {
+    .accommodation__title {
+        font-size: 1.33rem;
+        padding: 1rem 0 .66rem 0;
+    }
+}
+@media (max-width: 350px) {
+    .accommodation__title {
+        font-size: 1.1rem;
+        padding: .5rem 0 .33rem 0;
+    }
+}
+
+.accommodation__text {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.33rem;
+    padding: .33rem 0;
+    color: rgba(0, 0, 0, .66);
+    text-align: center;
+}
+@media (max-width: 1280px) {
+    .accommodation__text {
+        font-size: calc(.6rem + (.9 - .6) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(.9rem + (1.33 - .9) * ((100vw - 20rem) / (71.11 - 20)))
+    }
+}
+@media (max-width: 600px) {
+    .accommodation__text {
+        font-size: .8rem;
+        line-height: 1.2rem;
+        padding: .33rem 0;
+    }
+}
+@media (max-width: 350px) {
+    .accommodation__text {
+        font-size: .6rem;
+        line-height: .9rem;
+        padding: .33rem 0;
+    }
+}

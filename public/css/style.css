@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Prompt Reg', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 1.0);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2rem;
+}
+@media (max-width: 1280px) {
+    .container {
+        padding: 0 calc(.66rem + (2 - .66) * ((100vw - 20rem) / (71.11 - 20)));
+    }
+}
+
+.link-btn {
+    color: black;
+    border: 1px solid black;
+    padding: .66rem 1rem;
+    font-family: 'Fjalla One Reg', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    position: relative;
+    background-color: transparent;
+    display: inline-block;
+    transition: .5s;
+    z-index: 10;
+    overflow: hidden;
+    transform: translateY(1rem);
+    text-transform: uppercase;
+}
+@media (max-width: 1280px) {
+    .link-btn {
+        font-size: calc(.7rem + (1.2 - .7) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.7rem + (1.2 - .7) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(.5rem + (.66 - .5) * ((100vw - 20rem) / (80 - 20))) 1rem;
+    }
+}
+
+.link-btn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 97.33%;
+    top: 4%;
+    left: 103%;
+    background-color: black;
+    height: 92%;
+    transition: .5s;
+    z-index: -1;
+}
+
+.link-btn:hover:before {
+    left: 1.33%;
+}
+
+.link-btn:hover {
+    color: white;
+}
+
+.mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+    transform: translateX(-110%);
+    transition: .5s;
+}
+
+.mobile__close a {
+    display: inline-block;
+    padding: .33rem;
+    color: white;
+    text-decoration: none;
+    font-size: 4rem;
+    line-height: 1.5rem;
+    transform: rotateZ(45deg);
+    position: absolute;
+    top: 2.33rem;
+    right: 3rem;
+    opacity: .8;
+    transition: .5s;
+}
+@media (max-width: 1280px) {
+    .mobile__close a {
+        font-size: calc(3rem + (4 - 3) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1rem + (1.5 - 1) * ((100vw - 20rem) / (80 - 20)));
+        top: calc(1rem + (2.33 - 1) * ((100vw - 20rem) / (80 - 20)));
+        right: calc(1.33rem + (3 - 1.33) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.mobile__close a:hover {
+    opacity: 1;
+}
+
+.mobile__menu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.mobile__menu_link {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+    font-family: 'Fjalla One Reg', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+    opacity: .8;
+}
+@media (max-width: 1280px) {
+    .mobile__menu_link {
+        font-size: calc(.9rem + (1.2 - .9) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1rem + (1.2 - 1) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(.66rem + (1 - .66) * ((100vw - 20rem) / (80 - 20))) 0;
+    }
+}
+
+.mobile__menu_link:hover {
+    opacity: 1;
+    background-color: #1b5e20;
+}
+
+.mobile__open {
+    transform: translateX(0);
+}

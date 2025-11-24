@@ -1,0 +1,134 @@
+.bg-header {
+    width: 100%;
+    background-color: white;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .33rem 0;
+}
+
+.logo {
+    width: 10%;
+    color: black;
+}
+
+.logo svg {
+    display: block;
+    width: 3.33rem;
+    height: auto;
+    fill: transparent;
+    stroke: currentColor;
+    stroke-width: 1.5px;
+}
+@media (max-width: 1280px) {
+    .logo svg {
+        width: calc(1.66rem + (3.33 - 1.66) * ((100vw - 20rem) / (71.11 - 20)));
+    }
+
+}
+
+
+.nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__left {
+    text-align: left;
+    width: 85%;
+}
+@media (max-width: 599px) {
+    .nav__left {
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width: 459px) {
+    .nav__left {
+        padding-left: .33rem;
+    }
+
+}
+
+.nav__item {
+    font-size: .9rem;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: .66rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .9);
+    transition: .5s;
+    display: inline-block;
+}
+@media (max-width: 1280px) {
+    .nav__item {
+        font-size: calc(.66rem + (.9 - .66) * ((100vw - 20rem) / (71.11 - 20)));
+        padding: calc(.33rem + (.66 - .33) * ((100vw - 20rem) / (71.11 - 20)));
+    }
+}
+@media (max-width: 599px) {
+    .nav__left .nav__item {
+        display: none;
+    }
+}
+
+.nav__item:hover {
+    color: rgba(0, 0, 0, .66);
+}
+
+.burger {
+    width: 1.6rem;
+    height: 1.55rem;
+    display: none;
+    position: relative;
+    cursor: pointer;
+    opacity: .8;
+    transition: .5s;
+}
+@media (max-width: 599px) {
+    .burger {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 499px) {
+    .burger {
+        height: 1.33rem;
+    }
+}
+
+.burger:hover {
+    opacity: 1;
+}
+
+.burger span {
+    width: 100%;
+    height: .22rem;
+    background-color: rgba(90, 90, 90, 1);
+    display: block;
+    position: absolute;
+    border-radius: .33rem;
+}
+
+.burger span:nth-child(1) {
+    top: 1px;
+}
+.burger span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.burger span:nth-child(3) {
+    bottom: 1px;
+}
+
+.nav__right {
+    text-align: right;
+}
+

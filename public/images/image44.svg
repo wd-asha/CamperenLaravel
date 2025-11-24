@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.3" height="45.3" viewBox="0 0 45.3 45.3">
+<g transform="translate(0.65 0.65)">
+<g transform="translate(0 0)">
+<line x1="3.703" transform="translate(40.075 27.574)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></line>
+<path d="M2604.129,1538.516h9.226a1.42,1.42,0,0,0,1.42-1.42h0a7.1,7.1,0,0,0-7.1-7.1h-3.549a2.129,2.129,0,0,0-2.129,2.129v4.258A2.129,2.129,0,0,0,2604.129,1538.516Z" transform="translate(-2582.839 -1519.355)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+<path d="M2550.516,1471.42h0a1.419,1.419,0,0,0-1.419-1.42h-5.677a1.42,1.42,0,0,0-1.42,1.42h0" transform="translate(-2533.484 -1470)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+<circle cx="3.703" cy="3.703" r="3.703" transform="translate(15.078 23.87)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></circle>
+<g transform="translate(3.968 9.983)">
+<rect id="Rectangle_25" data-name="Rectangle 25" width="10.184" height="9.258" rx="4.629" transform="translate(10.184 9.258) rotate(180)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></rect>
+</g>
+<path d="M2516.71,1517.419h17.032v-4.968A18.451,18.451,0,0,0,2515.291,1494h-19.871a1.419,1.419,0,0,0-1.419,1.419V1516a1.419,1.419,0,0,0,1.419,1.419h14.193" transform="translate(-2494 -1489.742)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</g>
+<g transform="translate(0 27.574)">
+<g id="Group_32" data-name="Group 32" transform="translate(6.387 0)">
+<line y1="9.258" transform="translate(2.21)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></line>
+<path d="M2530,1662l2.839,2.839,2.839-2.839" transform="translate(-2530 -1655.51)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+</g>
+<path d="M2497.549,1646H2494v12.774h44V1646" transform="translate(-2494 -1642.348)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+<path d="M2525.355,1678v3.548H2514V1678" transform="translate(-2510.451 -1668.671)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path>
+<line x1="28.7" transform="translate(15.078 3.703)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></line>
+</g>
+</g>
+</svg>

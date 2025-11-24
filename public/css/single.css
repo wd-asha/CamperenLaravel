@@ -1,0 +1,383 @@
+.slider__single {
+    width: 100%;
+}
+
+.slider__single video {
+    width: 100%;
+    height: 50%;
+}
+
+.container__single {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2rem;
+    transform: translateY(-6rem);
+
+}
+
+.single {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 3rem 0 0 3rem;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.single__caption {
+    width: 75%;
+}
+
+.single__caption_title {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: 2.66rem;
+    line-height: 2.66rem;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+}
+
+.single__caption_subtitle span {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 2rem;
+    color: rgba(0, 0, 0, .66);
+}
+
+.single__caption_subtitle sup {
+    font-size: .6rem;
+}
+
+.single__caption_text p {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding: 1.33rem 0 1.33rem 0;
+    color: rgba(0, 0, 0, .66);
+}
+
+.single__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 0 0 0;
+}
+
+.single__content_amenities {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.single__content_services {
+    width: 40%;
+    background-color: rgba(52, 94, 65, .1);
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.amenities__title,
+.services__title,
+.campground__title {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: 1.66rem;
+    line-height: 5rem;
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+    font-weight: 600;
+}
+
+.amenities__item {
+    width: 50%;
+}
+
+.amenities__item_100 {
+    width: 100%;
+}
+
+.amenities__subtitle {
+    text-transform: uppercase;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .85rem;
+    line-height: 1.33rem;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 600;
+}
+
+.amenities__service {
+    padding: 1rem 0 2rem 0;
+}
+
+.amenities__service_item {
+    width: 100%;
+    padding-bottom: .33rem;
+}
+
+.amenities__service_item img {
+    width: 1.3rem;
+    height: auto;
+}
+
+.amenities__service_item .img-st {
+    width: .9rem;
+    height: auto;
+}
+
+.amenities__service_item span {
+    display: inline-block;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.66rem;
+    color: rgba(0, 0, 0, .66);
+    margin-left: .33rem;
+}
+
+.rules {
+    width: 100%;
+}
+
+.rule {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.33rem;
+    color: rgba(0, 0, 0, .66);
+    margin-bottom: .66rem;
+}
+
+.single__content_availability {
+    padding: 1rem 0 3rem 0;
+}
+
+.single__content_reservation {
+  /*  margin-top: 1rem;*/
+    /*background-color: #EAEAE9;*/
+    padding: 0;
+}
+
+.check {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.66rem;
+    color: rgba(0, 0, 0, .66);
+    text-transform: uppercase;
+}
+
+#checkin,
+#checkout {
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 0 0 .33rem 0;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    outline: none;
+    cursor: default;
+}
+
+#late,
+#cleaning,
+#washer,
+#pet,
+#fridge,
+#security,
+#linen {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin: 0 .5rem 0 0;
+    border: 1px solid #345E41;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.single__content_services label {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 2rem;
+    color: rgba(0, 0, 0, .66);
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service__item {
+    width: 60%;
+    text-align: left;
+    font-size: .9rem;
+    line-height: 2rem;
+}
+
+.service__price {
+    width: 40%;
+    text-align: right;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 2rem;
+    color: #345E41;
+}
+
+.your__price_left {
+    width: 60%;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: 1.5rem;
+    line-height: 5.66rem;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+}
+.your__price_right {
+    width: 40%;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: 1.33rem;
+    line-height: 5.66rem;
+    text-align: right;
+    color: #345E41;
+}
+
+#yourPrice {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: 1.33rem;
+    line-height: 5.66rem;
+    text-align: right;
+    color: #345E41;
+}
+
+.booking-link {
+    padding: .8rem 1.8rem;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .8rem;
+    line-height: .8rem;
+    border: 1px solid #345E41;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .8);
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 4rem;
+}
+
+.booking-link:hover {
+    background-color: #345E41;
+    color: white;
+}
+
+.weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.weather__left {
+    width: 50%;
+}
+
+.weather__right {
+    width: 50%;
+    border-left: 1px solid grey;
+}
+
+.weather__right img,
+.weather__temp img {
+    width: 1.66rem;
+    transform: translateY(.5rem);
+}
+
+.weather__right p {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: .9rem;
+    width: 100%;
+    text-align: right;
+    color: rgba(0, 0, 0, .8);
+    margin-bottom: .66rem;
+}
+
+.weather__temp {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+}
+
+.weather__left p {
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, .8);
+}
+
+.campground {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.campground__list {
+    width: 35%;
+}
+
+.campground_item {
+    width: 100%;
+    padding-bottom: .66rem;
+}
+
+.campground_item img {
+    width: 1.4rem;
+    height: auto;
+}
+
+.campground_item span {
+    display: inline-block;
+    font-family: 'Prompt Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.66rem;
+    color: rgba(0, 0, 0, .7);
+    margin-left: .33rem;
+    transform: translateY(-.33rem);
+}
+
+.campground__image {
+    width: 65%;
+    padding-top: 3rem;
+}
+
+.campground__image img {
+    width: 100%;
+}
+
+.check-single {
+    width: 100%;
+    margin-bottom: .66rem;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 4rem;
+}
+
+.info-box_rules {
+    width: 50%;
+}
+.info-box_image {
+    width: 40%;
+    padding-top: 3rem;
+}
+
+.info-box_image img {
+    width: 100%;
+}

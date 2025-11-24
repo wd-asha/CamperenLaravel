@@ -1,0 +1,201 @@
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.overlay-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    z-index: 300;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: .5s;
+}
+
+.popup__area {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup__content {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.popup__content {
+    background-color: white;
+    width: 25rem;
+    padding: 2.5rem;
+    position: relative;
+    transform: translate(0, -200%);
+    opacity: 0;
+    transition: .5s;
+}
+@media (max-width: 1280px) {
+    .popup__content {
+        width: calc(16rem + (25 - 16) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(1rem + (2.5 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.popup__close {
+    font-family: 'Tor', sans-serif;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: rgba(70, 70, 70, .8);
+    transition: .5s;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.popup__close:hover {
+    color: darkred;
+}
+
+.popup__titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__title {
+    font-size: 1.1rem;
+    font-family: 'Prompt Reg', sans-serif;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(80, 80, 80, 1);
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 2rem;
+}
+@media (max-width: 1280px) {
+    .popup__title {
+        font-size: calc(.75rem + (1.1 - .75) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.title-active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.popup__title:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.popup__text_login {
+    visibility: visible;
+}
+
+.login-form {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.name-input,
+.email-input,
+.pass-input {
+    width: 100%;
+    font-size: .9rem;
+    line-height: .9rem;
+    padding: 1rem;
+    font-family: 'BigShouldersReg', sans-serif;
+    color: rgba(70, 70, 70, .8);
+    outline: none;
+    margin-bottom: 1.33rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+@media (max-width: 1280px) {
+    .name-input,
+    .email-input,
+    .pass-input {
+        font-size: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(.5rem + (1.33 - .5) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.popup__text_login,
+.popup__text_reset,
+.popup__text_register {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.popup__text_reset p,
+.popup__text_login p,
+.popup__text_register p {
+    color: rgba(70, 70, 70, .8);
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: .33rem;
+}
+
+.popup__text_reset p.personal-data,
+.popup__text_register p.personal-data {
+    color: rgba(70, 70, 70, .7);
+    font-size: .9rem;
+    line-height: 1.33rem;
+    text-align: left;
+    margin-bottom: 1.33rem;
+}
+@media (max-width: 1280px) {
+    .popup__text_reset p.personal-data,
+    .popup__text_register p.personal-data {
+        font-size: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.9rem + (1.33 - .9) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(.66rem + (1.33 - .66) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.reg-link {
+    color: rgba(70, 70, 70, .8);
+    transition: .5s;
+}
+
+.reg-link:hover {
+    color: #f9b510;
+}
