@@ -43,7 +43,7 @@
             <div class="popup__text_login display-block" id="popupTextLogin">
                 <form action="{{ route('login') }}" class="login-form" method="post">
                     @csrf
-                    <input class="email-input" id="email" name="email"
+                    <input class="email-input" id="email_login" name="email"
                            placeholder="Email" value="{{ old('email') }}" required autofocus>
                     <input type="password" class="pass-input" id="passwordLogin"
                            name="password" placeholder="Password" required autocomplete="password">
@@ -67,7 +67,7 @@
                     @csrf
                     <input class="name-input" id="name" name="name"
                            placeholder="Name" value="{{ old('name') }}" required autofocus>
-                    <input class="email-input" id="email" name="email"
+                    <input class="email-input" id="email_register" name="email"
                            placeholder="Email" value="{{ old('email') }}" required>
                     <input type="password" class="pass-input" id="password"
                            name="password" placeholder="Password" required autocomplete="new-password">
@@ -194,5 +194,215 @@
 <script src="{{ asset('js/slider.js') }}"></script>
 <script src="{{ asset('js/burger.js') }}"></script>
 <script src="{{ asset('js/login.js') }}"></script>
+
+<!-- GSAP core -->
+<script src="{{ asset('js/gsap.min.js') }}"></script>
+<!-- ScrollTrigger -->
+<script src="{{ asset('js/ScrollTrigger.min.js') }}"></script>
+<script src="{{ asset('js/activity-anim.js') }}"></script>
+
+<script>
+    // Убедиться, что плагин зарегистрирован
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Отложенный запуск, чтобы элемент точно в DOM (альтернатива: поместить скрипт в конец body — мы уже там)
+    document.addEventListener('DOMContentLoaded', () => {
+        gsap.utils.toArray('.booking__item').forEach(item => {
+            gsap.fromTo(item,
+                { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top 75%",   // середина элемента достигает четвети экрана снизу
+                        toggleActions: "play none none reverse",
+                    }
+                }
+            );
+        });
+
+        /*gsap.from('.blog', {
+            opacity: 0,
+            y: 50,
+            duration: 0.8,
+            ease: "power2.out",
+            stagger: 0.25,
+            scrollTrigger: {
+                trigger: ".blogs",  // общий родитель
+                start: "top 75%",
+                toggleActions: "play none none reverse"
+            }
+        });*/
+
+        gsap.set(".blog", { opacity: 0, y: 50 });
+
+        ScrollTrigger.batch(".blog", {
+            start: "top 80%",
+            onEnter: (batch) => {
+                gsap.to(batch, {
+                    opacity: 1,
+                    y: 0,
+                    stagger: 0.25,
+                    duration: 0.8,
+                    ease: "power2.out"
+                });
+            },
+            onLeaveBack: (batch) => {
+                gsap.to(batch, {
+                    opacity: 0,
+                    y: 50,
+                    stagger: 0.15,
+                    duration: 0.6
+                });
+            }
+        });
+
+
+
+
+        gsap.fromTo(".about__item",
+            {
+                x: 80,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
+                duration: 0.6,
+                ease: "power2.out",
+                stagger: 0.25,
+                scrollTrigger: {
+                    trigger: ".about__items",
+                    start: "top 75%",     // начало анимации
+                    end: "bottom 25%",    // конец области
+                    toggleActions: "play reverse play reverse",
+                    // play — когда входит, reverse — когда выходит
+                    scrub: false          // отключено, чтобы не зависело от скорости скролла
+                }
+            }
+        );
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const text1 = document.querySelector(".stunning__text1");
+        // Разбивает текст на буквы, но сохраняет <br>
+        text1.innerHTML = text1.innerHTML.replace(/([^<>\n])(?=(?:[^<>]|<br>)*$)/g, match => {
+            return match.replace(/./g, "<span class='letter'>$&</span>");
+        });
+
+        const text2 = document.querySelector(".stunning__text2");
+        if (!text2.innerHTML.includes('<span class="letter">')) {
+            text2.innerHTML = text2.textContent.replace(/./g, "<span class='letter'>$&</span>");
+        }
+
+        const text3 = document.querySelector(".stunning__text3");
+        // Разбивает текст на буквы, но сохраняет <br>
+        text3.innerHTML = text3.innerHTML.replace(/([^<>\n])(?=(?:[^<>]|<br>)*$)/g, match => {
+            return match.replace(/./g, "<span class='letter'>$&</span>");
+        });
+
+        gsap.fromTo(
+            ".stunning__text1 .letter",
+            { opacity: 0, y: -20 },
+            {
+                opacity: 1,
+                y: 0,
+                stagger: 0.05,
+                duration: 0.2,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".stunning1",
+                    start: "top 66%",
+                    toggleActions: "play reverse play reverse",
+                    // markers: true
+                }
+            }
+        );
+        gsap.fromTo(
+            ".stunning__text2 .letter",
+            { opacity: 0, y: -20 },
+            {
+                opacity: 1,
+                y: 0,
+                stagger: 0.05,
+                duration: 0.2,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".stunning2",
+                    start: "top 66%",
+                    toggleActions: "play reverse play reverse",
+                    // markers: true
+                }
+            }
+        );
+        gsap.fromTo(
+            ".stunning__text3 .letter",
+            { opacity: 0, y: -20 },
+            {
+                opacity: 1,
+                y: 0,
+                stagger: 0.05,
+                duration: 0.2,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".stunning3",
+                    start: "top 66%",
+                    toggleActions: "play reverse play reverse",
+                    // markers: true
+                }
+            }
+        );
+    });
+</script>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".infrastructure__item", {
+        scrollTrigger: {
+            trigger: ".infrastructure__items",
+            start: "top 75%",
+            toggleActions: "play reset play reset" // анимация повторяется при скролле вверх и вниз
+        },
+        opacity: 0,
+        y: 50,
+        x: 20,
+        scale: 0.95,
+        duration: 0.7,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        gsap.utils.toArray('.booking__item').forEach(item => {
+            gsap.fromTo(item,
+                {opacity: 0, y: 50},
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top 75%",   // середина элемента достигает четвети экрана снизу
+                        toggleActions: "play none none reverse",
+                    }
+                }
+            );
+        });
+    });
+</script>
+
+
+
 </body>
 </html>

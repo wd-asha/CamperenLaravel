@@ -12,9 +12,8 @@
     line-height: 3.66rem;
     margin-bottom: 2rem;
     color: white;
-    transform: translateX(0);
-    transition: 1s;
-    opacity: 1;
+    transform: translateX(-100px);
+    opacity: 0;
     visibility: visible;
     text-transform: uppercase;
     font-weight: 600;
@@ -26,6 +25,8 @@
     margin-bottom: 2rem;
     color: white;
     padding-left: 50%;
+    transform: translateX(-100px);
+    opacity: 0;
 }
 
 .posts__header {

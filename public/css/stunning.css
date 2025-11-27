@@ -1,13 +1,19 @@
-.stunning {
+.stunning1,
+.stunning2,
+.stunning3 {
     width: 100%;
     position: relative;
 }
 
-.stunning img {
+.stunning1 img,
+.stunning2 img,
+.stunning3 img {
     width: 100%;
 }
 
-.stunning__content {
+.stunning__content1,
+.stunning__content2,
+.stunning__content3 {
     max-width: 1280px;
     width: 66%;
     margin: 0 auto;
@@ -17,15 +23,30 @@
     transform: translate(-48%, -50%);
 }
 
-.stunning__text {
+.stunning__text1,
+.stunning__text2,
+.stunning__text3 {
     font-family: 'Prompt SemiBold', sans-serif;
     font-size: 3.33rem;
     line-height: 3rem;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 2rem;
+    display: inline-block; /* фиксирует размеры и шрифт */
 }
+
+.stunning__text1 .letter,
+.stunning__text2 .letter,
+.stunning__text3 .letter {
+    font: inherit;      /* наследует font-size, font-family и все параметры */
+    line-height: inherit;
+    display: inline-block;
+    white-space: pre;
+}
+
 @media (max-width: 1280px) {
-    .stunning__text {
+    .stunning__text1,
+    .stunning__text2,
+    .stunning__text3 {
         font-size: calc(1rem + (3.33 - 1) * ((100vw - 20rem) / (71.11 - 20)));
         line-height: calc(1rem + (3 - 1) * ((100vw - 20rem) / (71.11 - 20)));
         margin-bottom: calc(.5rem + (2 - .5) * ((100vw - 20rem) / (71.11 - 20)));

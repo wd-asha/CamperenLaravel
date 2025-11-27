@@ -176,6 +176,37 @@
 
 <script  src="{{ asset('js/jquery.js') }}"></script>
 <script src="{{ asset('js/slider.js') }}"></script>
+<!-- GSAP core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<!-- ScrollTrigger plugin (обязательно) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+    // Убедиться, что плагин зарегистрирован
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Отложенный запуск, чтобы элемент точно в DOM (альтернатива: поместить скрипт в конец body — мы уже там)
+    document.addEventListener('DOMContentLoaded', () => {
+        gsap.utils.toArray('.booking__item').forEach(item => {
+            gsap.fromTo(item,
+                { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top 75%",   // середина элемента достигает середины экрана
+                        // start: "top center"     // вариант: когда верх элемента в центре экрана
+                        toggleActions: "play none none reverse",
+                    }
+                }
+            );
+        });
+    });
+</script>
+
 <script>
     let loginTab = document.getElementById("loginTab");
     let registerTab = document.getElementById("registerTab");

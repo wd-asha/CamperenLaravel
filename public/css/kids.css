@@ -26,6 +26,15 @@
     background-color: #345E41;
     width: auto;
 }
+@media (max-width: 1280px) {
+    .booking__item-link_kids {
+        padding:
+            calc(.33rem + (.66 - .33) * ((100vw - 20rem) / (80 - 20)))
+            calc(1rem + (1.66 - 1) * ((100vw - 20rem) / (80 - 20)));
+        font-size: calc(.5rem + (.8 - .5) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.5rem + (.8 - .5) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .booking__item-link_kids:hover {
     background-color: black;

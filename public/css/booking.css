@@ -66,6 +66,8 @@
 .booking__item {
     width: 46.66%;
     margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateY(40px);
 }
 @media (max-width: 1280px) {
     .booking__item {

@@ -15,7 +15,7 @@
                 <div class="slide__about_above-title">Connecting with nature</div>
                 <div class="slide__about-title">Change The<br>way you think</div>
                 <a href="" class="slide__link pos hide">
-                    <a href="" class="about-link">check availability</a>
+                    <a href="{{ route('accommodation') }}" class="about-link">check availability</a>
                 </a>
             </div>
         </div>
@@ -25,22 +25,22 @@
         <div class="zones">
             <div class="zone">
                 <div class="zone__image">
-                    <img src="images/aboutus-img2.jpg" alt="">
+                    <img src="{{ asset('images/aboutus-img2.jpg') }}" alt="">
                 </div>
                 <div class="zone__content">
                     <div class="zone__title">Trailers / Zone A</div>
                     <div class="zone__subtitle">1-6 persons | 15m<sup>2</sup></div>
                     <div class="zone__text">Suspendisse sodales ligula lobortis porttitor eleifend. Aenean nisi ipsum, euismod at erat et, dapibus ultricies lectus. Sed eget leo hendrerit, aliquam risus sed, pretium nibh. Suspendisse vitae maximus ligula. Quisque id nibh bibendum, iaculis nisl</div>
                     <div class="zone__services">
-                        <img src="images/image31.svg" alt="" style="width: 1.66rem">
-                        <img src="images/image36.svg" alt="" style="width: 1rem">
-                        <img src="images/image42.svg" alt="">
-                        <img src="images/image28.svg" alt="">
-                        <img src="images/image30.svg" alt="">
-                        <img src="images/image35.svg" alt="">
-                        <img src="images/image62.svg" alt="" style="width: .9rem">
-                        <img src="images/image41.svg" alt="">
-                        <img src="images/image71.svg" alt="">
+                        <img src="{{ asset('images/image31.svg') }}" class="zone__services__img" alt="" style="width: 1.66rem">
+                        <img src="{{ asset('images/image36.svg') }}" class="zone__services__img" alt="" style="width: 1rem">
+                        <img src="{{ asset('images/image42.svg') }}" class="zone__services__img" alt="">
+                        <img src="{{ asset('images/image28.svg') }}" class="zone__services__img" alt="">
+                        <img src="{{ asset('images/image30.svg') }}" class="zone__services__img" alt="">
+                        <img src="{{ asset('images/image35.svg') }}" class="zone__services__img" alt="">
+                        <img src="{{ asset('images/image62.svg') }}" class="zone__services__img" alt="" style="width: .9rem">
+                        <img src="{{ asset('images/image41.svg') }}" class="zone__services__img" alt="">
+                        <img src="{{ asset('images/image71.svg') }}" class="zone__services__img" alt="">
                     </div>
                     <a href="" class="zone__link">check availability</a>
                 </div>
@@ -48,50 +48,50 @@
 
             <div class="zone">
                 <div class="zone__image zone__image_noright">
-                    <img src="images/aboutus-img3.jpg" alt="">
+                    <img src="{{ asset('images/aboutus-img3.jpg') }}" alt="">
                 </div>
                 <div class="zone__content zone__content_right">
                     <div class="zone__title text__right">Lux Cabins / Zone C</div>
                     <div class="zone__subtitle text__right">2-6 persons | 22m<sup>2</sup></div>
                     <div class="zone__text text__right">Fusce eu efficitur tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum tristique libero ex, sit amet dignissim sapien tempus sed. Aliquam condimentum risus et ornare lobortis vivamus iaculis</div>
-                    <div class="zone__services flex__right">
-                        <img src="images/image73.svg" alt="" style="width: 1.66rem">
-                        <img src="images/image39.svg" alt="" style="width: 1rem">
-                        <img src="images/image35.svg" alt="" style="width: 1.66rem">
-                        <img src="images/image42.svg" alt="">
-                        <img src="images/image28.svg" alt="">
-                        <img src="images/image41.svg" alt="">
-                        <img src="images/image29.svg" alt="">
-                        <img src="images/image33.svg" alt="">
-                        <img src="images/image62.svg" alt="" style="width: .9rem">
+                    <div class="zone__services2 flex__right">
+                        <img src="{{ asset('images/image73.svg') }}" class="zone__services__img2" alt="" style="width: 1.66rem">
+                        <img src="{{ asset('images/image39.svg') }}" class="zone__services__img2" alt="" style="width: 1rem">
+                        <img src="{{ asset('images/image35.svg') }}" class="zone__services__img2" alt="" style="width: 1.66rem">
+                        <img src="{{ asset('images/image42.svg') }}" class="zone__services__img2" alt="">
+                        <img src="{{ asset('images/image28.svg') }}" class="zone__services__img2" alt="">
+                        <img src="{{ asset('images/image41.svg') }}" class="zone__services__img2" alt="">
+                        <img src="{{ asset('images/image29.svg') }}" class="zone__services__img2" alt="">
+                        <img src="{{ asset('images/image33.svg') }}" class="zone__services__img2" alt="">
+                        <img src="{{ asset('images/image62.svg') }}" class="zone__services__img2" alt="" style="width: .9rem">
                     </div>
                     <div class="link__right">
                         <a href="" class="zone__link link__right">check availability</a>
                     </div>
                 </div>
                 <div class="zone__image zone__image_right">
-                    <img src="images/aboutus-img3.jpg" alt="">
+                    <img src="{{ asset('images/aboutus-img3.jpg') }}" alt="">
                 </div>
             </div>
 
             <div class="zone">
                 <div class="zone__image">
-                    <img src="images/aboutus-img4.jpg" alt="">
+                    <img src="{{ asset('images/aboutus-img4.jpg') }}" alt="">
                 </div>
                 <div class="zone__content">
                     <div class="zone__title">RV Caravan / Zone B</div>
                     <div class="zone__subtitle">1-6 persons | 15m<sup>2</sup></div>
                     <div class="zone__text"> Integer a tempus dolor, ut vehicula diam. Suspendisse potenti. In quis tortor luctus orci sodales dictum vel egestas elit. Duis lobortis lectus vitae sapien tempus malesuada. Nullam non nibh eget massa sollicitudin placerat vitae maecenas lacinia nunc</div>
-                    <div class="zone__services">
-                        <img src="images/image74.svg" alt="" style="width: 2rem">
-                        <img src="images/image50.svg" alt="" style="width: 1.33rem">
-                        <img src="images/image59.svg" alt="" style="width: 1.66rem">
-                        <img src="images/image66.svg" alt="">
-                        <img src="images/image42.svg" alt="">
-                        <img src="images/image41.svg" alt="">
-                        <img src="images/image62.svg" alt="" style="width: .9rem">
-                        <img src="images/image33.svg" alt="">
-                        <img src="images/image75.svg" alt="" style="width: 1rem">
+                    <div class="zone__services3">
+                        <img src="{{ asset('images/image74.svg') }}" class="zone__services__img3" alt="" style="width: 2rem">
+                        <img src="{{ asset('images/image50.svg') }}" class="zone__services__img3" alt="" style="width: 1.33rem">
+                        <img src="{{ asset('images/image59.svg') }}" class="zone__services__img3" alt="" style="width: 1.66rem">
+                        <img src="{{ asset('images/image66.svg') }}" class="zone__services__img3" alt="">
+                        <img src="{{ asset('images/image42.svg') }}" class="zone__services__img3" alt="">
+                        <img src="{{ asset('images/image41.svg') }}" class="zone__services__img3" alt="">
+                        <img src="{{ asset('images/image62.svg') }}" class="zone__services__img3" alt="" style="width: .9rem">
+                        <img src="{{ asset('images/image33.svg') }}" class="zone__services__img3" alt="">
+                        <img src="{{ asset('images/image75.svg') }}" class="zone__services__img3" alt="" style="width: 1rem">
                     </div>
                     <a href="" class="zone__link">check availability</a>
                 </div>
@@ -104,15 +104,15 @@
                 <div class="zone__content zone__content_right">
                     <div class="zone__title text__right">Campground price list</div>
                     <div class="price-list">
-                        <p class="first">List</p><p>Low season</p><p>High season</p>
-                        <p class="first">Zone A, per person</p><p>$15.00</p><p>$17.00</p>
-                        <p class="first">Zone B, per person</p><p>$10.00</p><p>$13.00</p>
-                        <p class="first">Child (6-12 years)</p><p>$7.00</p><p>$9.00</p>
-                        <p class="first">Infants (0-5 years)</p><p>Gratis</p><p>Gratis</p>
-                        <p class="first">Pet</p><p>Free </p><p>Free</p>
-                        <p class="first">Electricity</p><p>$4.00</p><p>$4.00</p>
-                        <p class="first">Internet connection</p><p>Free</p><p>Free</p>
-                        <p class="first">Vehicle on the plot</p><p>$13</p><p>$13</p>
+                        <p class="first">List</p><p class="second">Low season</p><p class="third">High season</p>
+                        <p class="first">Zone A, per person</p><p class="second">$15.00</p><p class="third">$17.00</p>
+                        <p class="first">Zone B, per person</p><p class="second">$10.00</p><p class="third">$13.00</p>
+                        <p class="first">Child (6-12 years)</p><p class="second">$7.00</p><p class="third">$9.00</p>
+                        <p class="first">Infants (0-5 years)</p><p class="second">Gratis</p class="third"><p>Gratis</p>
+                        <p class="first">Pet</p><p class="second">Free </p><p class="third">Free</p>
+                        <p class="first">Electricity</p><p class="second">$4.00</p><p class="third">$4.00</p>
+                        <p class="first">Internet connection</p><p class="second">Free</p><p class="third">Free</p>
+                        <p class="first">Vehicle on the plot</p><p class="second">$13</p><p class="third">$13</p>
                     </div>
 
                 </div>
@@ -145,4 +145,9 @@
         </div>
     </div>
 
+    <script src="{{ asset('js/gsap.min.js') }}"></script>
+    <script src="{{ asset('js/ScrollTrigger.min.js') }}"></script>
+    <script src="{{ asset('js/about.js') }}"></script>
+
 @endsection
+

@@ -28,10 +28,10 @@
                 Praesent ante velit, suscipit et eleifend eu, dignissim at sem. Phasellus pharetra lobortis turpis. Morbi porta gravida orci, quis cursus purus consectetur. Our Service Centre is open Monday to Friday between the hours of 08:00 – 18:00
             </div>
             <div class="contacts__left_phones">
-                Reception phone: +64 (0)50 745 6473<br>
-                Reservations: +27 (0)13 735 4265<br>
-                Lodge: + 51 (0)13 735 4265<br>
-                Emergencies: + 235 62 182 0374
+                <span class="contacts__span">Reception phone: +64 (0)50 745 6473</span><br>
+                <span class="contacts__span">Reservations: +27 (0)13 735 4265</span><br>
+                <span class="contacts__span">Lodge: + 51 (0)13 735 4265</span><br>
+                <span class="contacts__span">Emergencies: + 235 62 182 0374</span>
             </div>
             <div class="contacts__left_social">
                 Social/follow:
@@ -96,4 +96,9 @@
 
     </div>
 </div>
+
+<script src="{{ asset('js/gsap.min.js') }}"></script>
+<script src="{{ asset('js/ScrollTrigger.min.js') }}"></script>
+<script src="{{ asset('js/contacts.js') }}"></script>
+
 @endsection

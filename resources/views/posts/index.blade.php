@@ -14,7 +14,7 @@
             <div class="slide__text_posts">
                 <div class="slide__posts-title">EXPERIENCE<br>FREEDOM</div>
                 <div class="slide__posts_subtitle">Experience the true beauty of nature and create new memoires with family and friends</div>
-                <a href="" class="slide__link pos hide">
+                <a href="" class="slide__link">
                     <a href="" class="about-link">check availability</a>
                 </a>
             </div>
@@ -46,5 +46,42 @@
           @endforeach
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tl = gsap.timeline();
+
+            tl.fromTo('.slide__posts-title', {
+                    x: -100,
+                    opacity: 0
+                },
+                {
+                    duration: .6,
+                    x: 0,
+                    opacity: 1,
+                    ease: "power2.out"
+                })
+
+                .fromTo('.slide__posts_subtitle', {
+                        x: -100,
+                        opacity: 0
+                    },
+                    {
+                        duration: 0.6,
+                        x: 0,
+                        opacity: 1,
+                        ease: "power2.out"
+                    }, "+=0.3")
+
+                .fromTo('.about-link', {
+                        opacity: 0
+                    },
+                    {
+                        duration: 0.4,
+                        opacity: 1,
+                        ease: "power2.out"
+                    }, "+=0.3");
+        });
+    </script>
 
 @endsection

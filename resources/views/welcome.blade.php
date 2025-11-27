@@ -263,10 +263,10 @@
     </div>
 </div>
 
-<div class="stunning">
+<div class="stunning1">
     <img src="{{ asset('images/home-5.jpg') }}" alt="">
-    <div class="stunning__content">
-        <div class="stunning__text">Stunning<br>landscapes, fresh<br>air and peace</div>
+    <div class="stunning__content1">
+        <div class="stunning__text1">Stunning<br>landscapes, fresh<br>air and peace</div><br>
         <a href="" class="stunning__link">view more</a>
     </div>
 </div>
@@ -378,10 +378,10 @@
 </div>
 {{-- конец категории на главной --}}
 
-<div class="stunning">
+<div class="stunning2">
     <img src="{{ asset('images/home-6.jpg') }}" alt="">
-    <div class="stunning__content">
-        <div class="stunning__text">The great outdoors</div>
+    <div class="stunning__content2">
+        <div class="stunning__text2">The great outdoors</div>
         <p class="slide__above-title" style="line-height: 1.3">Equipped with astounding layouts, <br>booking feature & all-round <br>accommodation lists & singles</p>
     </div>
 </div>
@@ -396,7 +396,7 @@
             <div class="infrastructure__item">
                 <div class="infrastructure__header">
                     <div class="infrastructure__header-image">
-                        <img src="images/image43.svg" alt="">
+                        <img src="{{ asset('images/image43.svg') }}" alt="">
                     </div>
                     <div class="infrastructure__title">Parking in the camp</div>
                 </div>
@@ -405,7 +405,7 @@
             <div class="infrastructure__item">
                 <div class="infrastructure__header">
                     <div class="infrastructure__header-image">
-                        <img src="images/image44.svg" alt="">
+                        <img src="{{ asset('') }}images/image44.svg" alt="">
                     </div>
                     <div class="infrastructure__title">Motorhome service</div>
                 </div>
@@ -414,7 +414,7 @@
             <div class="infrastructure__item">
                 <div class="infrastructure__header">
                     <div class="infrastructure__header-image">
-                        <img src="images/image45.svg" alt="">
+                        <img src="{{ asset('images/image45.svg') }}" alt="">
                     </div>
                     <div class="infrastructure__title">Washing machines</div>
                 </div>
@@ -423,7 +423,7 @@
             <div class="infrastructure__item">
                 <div class="infrastructure__header">
                     <div class="infrastructure__header-image">
-                        <img src="images/image46.svg" alt="">
+                        <img src="{{ asset('images/image46.svg') }}" alt="">
                     </div>
                     <div class="infrastructure__title">Sanitary facilities</div>
                 </div>
@@ -432,7 +432,7 @@
             <div class="infrastructure__item">
                 <div class="infrastructure__header">
                     <div class="infrastructure__header-image">
-                        <img src="images/image47.svg" alt="">
+                        <img src="{{ asset('images/image47.svg') }}" alt="">
                     </div>
                     <div class="infrastructure__title">Fast Internet</div>
                 </div>
@@ -441,7 +441,7 @@
             <div class="infrastructure__item">
                 <div class="infrastructure__header">
                     <div class="infrastructure__header-image">
-                        <img src="images/image48.svg" alt="">
+                        <img src="{{ asset('images/image48.svg') }}" alt="">
                     </div>
                     <div class="infrastructure__title">Electrical cabinets</div>
                 </div>
@@ -451,10 +451,10 @@
     </div>
 </div>
 
-<div class="stunning">
-    <img src="images/Home-3-parallax.jpg" alt="">
-    <div class="stunning__content">
-        <div class="stunning__text">Book Your Next Camping<br>in a Comfortable<br>Environment</div>
+<div class="stunning3">
+    <img src="{{ asset('images/Home-3-parallax.jpg') }}" alt="">
+    <div class="stunning__content3">
+        <div class="stunning__text3">Book Your Next Camping<br>in a Comfortable<br>Environment</div>
         <a href="" class="stunning__link">view more</a>
     </div>
 </div>
@@ -479,4 +479,5 @@
         @endforeach
     </div>
 </div>
+
 @endsection
