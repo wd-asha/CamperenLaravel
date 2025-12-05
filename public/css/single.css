@@ -12,7 +12,12 @@
     max-width: 1280px;
     padding: 0 2rem;
     transform: translateY(-6rem);
-
+}
+@media (max-width: 1280px) {
+    .container__single {
+        padding: 0 calc(.66rem + (2 - .66) * ((100vw - 20rem) / (80 - 20)));
+        transform: translateY(calc(-2rem + (-6 + 2) * ((100vw - 20rem) / (80 - 20))));
+    }
 }
 
 .single {
@@ -25,9 +30,17 @@
     background-color: white;
     margin: 0 auto;
 }
+@media (max-width: 1280px) {
+    .single {
+        padding:
+            calc(1rem + (3 - 1) * ((100vw - 20rem) / (80 - 20)))
+            0 0
+            calc(1rem + (3 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .single__caption {
-    width: 75%;
+    width: 95%;
 }
 
 .single__caption_title {
@@ -37,12 +50,24 @@
     color: rgba(0, 0, 0, 1);
     font-weight: 600;
 }
+@media (max-width: 1280px) {
+    .single__caption_title {
+        font-size: calc(1.66rem + (2.66 - 1.66) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.66rem + (2.66 - 1.66) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .single__caption_subtitle span {
     font-family: 'Prompt Reg', sans-serif;
     font-size: .9rem;
     line-height: 2rem;
     color: rgba(0, 0, 0, .66);
+}
+@media (max-width: 1280px) {
+    .single__caption_subtitle span {
+        font-size: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .single__caption_subtitle sup {
@@ -53,8 +78,15 @@
     font-family: 'Prompt Reg', sans-serif;
     font-size: .9rem;
     line-height: 1.5rem;
-    padding: 1.33rem 0 1.33rem 0;
+    padding: 1.33rem 0;
     color: rgba(0, 0, 0, .66);
+}
+@media (max-width: 1280px) {
+    .single__caption_text p {
+        font-size: calc(.8rem + (.9 - .8) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.1rem + (1.5 - 1.1) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(.33rem + (1.33 - .33) * ((100vw - 20rem) / (80 - 20))) 0;
+    }
 }
 
 .single__content {
@@ -63,6 +95,12 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 1rem 0 0 0;
+    flex-wrap: wrap;
+}
+@media (max-width: 1280px) {
+    .single__content {
+        padding: calc(0rem + (1 - 0) * ((100vw - 20rem) / (80 - 20))) 0 0 0;
+    }
 }
 
 .single__content_amenities {
@@ -72,12 +110,71 @@
     align-items: flex-start;
     flex-wrap: wrap;
 }
+@media (max-width: 950px) {
+    .single__content_amenities {
+        width: 70%;
+    }
+}
+@media (max-width: 800px) {
+    .single__content_amenities {
+        width: 80%;
+    }
+}
+@media (max-width: 700px) {
+    .single__content_amenities {
+        width: 90%;
+    }
+}
+@media (max-width: 600px) {
+    .single__content_amenities {
+        width: 100%;
+    }
+}
 
 .single__content_services {
     width: 40%;
     background-color: rgba(52, 94, 65, .1);
     padding: 1rem 3rem 3rem 3rem;
 }
+@media (max-width: 1280px) {
+    .single__content_services {
+        padding: calc(.33rem + (1 - .33) * ((100vw - 20rem) / (80 - 20)))
+        calc(1.33rem + (3 - 1.33) * ((100vw - 20rem) / (80 - 20)))
+        calc(1.33rem + (3 - 1.33) * ((100vw - 20rem) / (80 - 20)))
+        calc(1.33rem + (3 - 1.33) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+@media (max-width: 950px) {
+    .single__content_services {
+        width: 50%;
+    }
+}
+@media (max-width: 800px) {
+    .single__content_services {
+        width: 60%;
+    }
+}
+@media (max-width: 700px) {
+    .single__content_services {
+        width: 70%;
+    }
+}
+@media (max-width: 600px) {
+    .single__content_services {
+        width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .single__content_services {
+        width: 90%;
+    }
+}
+@media (max-width: 400px) {
+    .single__content_services {
+        width: 100%;
+    }
+}
+
 
 .amenities__title,
 .services__title,
@@ -89,9 +186,22 @@
     width: 100%;
     font-weight: 600;
 }
+@media (max-width: 1280px) {
+    .amenities__title,
+    .services__title,
+    .campground__title {
+        font-size: calc(1.2rem + (1.66 - 1.2) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(2.66rem + (5 - 2.66) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .amenities__item {
     width: 50%;
+}
+@media (max-width: 400px) {
+    .amenities__item {
+        width: 100%;
+    }
 }
 
 .amenities__item_100 {
@@ -106,24 +216,51 @@
     color: rgba(0, 0, 0, .7);
     font-weight: 600;
 }
+@media (max-width: 1280px) {
+    .amenities__subtitle {
+        font-size: calc(.66rem + (.85 - .66) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.8rem + (1.33 - .8) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .amenities__service {
     padding: 1rem 0 2rem 0;
+}
+@media (max-width: 1280px) {
+    .amenities__service {
+        padding: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (80 - 20))) 0
+        calc(.66rem + (2 - .66) * ((100vw - 20rem) / (80 - 20))) 0;
+    }
 }
 
 .amenities__service_item {
     width: 100%;
     padding-bottom: .33rem;
 }
+@media (max-width: 1280px) {
+    .amenities__service_item {
+        padding-bottom: calc(0rem + (.33 - 0) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .amenities__service_item img {
     width: 1.3rem;
     height: auto;
 }
+@media (max-width: 1280px) {
+    .amenities__service_item .img {
+        width: calc(1rem + (1.3 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .amenities__service_item .img-st {
     width: .9rem;
     height: auto;
+}
+@media (max-width: 1280px) {
+    .amenities__service_item .img-st {
+        width: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .amenities__service_item span {
@@ -133,6 +270,12 @@
     line-height: 1.66rem;
     color: rgba(0, 0, 0, .66);
     margin-left: .33rem;
+}
+@media (max-width: 1280px) {
+    .amenities__service_item span {
+        font-size: calc(.8rem + (.9 - .8) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1rem + (1.66 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .rules {
@@ -146,9 +289,22 @@
     color: rgba(0, 0, 0, .66);
     margin-bottom: .66rem;
 }
+@media (max-width: 1280px) {
+    .rule {
+        font-size: calc(.8rem + (.9 - .8) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.1rem + (1.5 - 1.1) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(.33rem + (.66 - .33) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .single__content_availability {
     padding: 1rem 0 3rem 0;
+}
+@media (max-width: 1280px) {
+    .single__content_availability {
+        padding: calc(.33rem + (1 - .33) * ((100vw - 20rem) / (80 - 20))) 0
+        calc(1rem + (3 - 1) * ((100vw - 20rem) / (80 - 20))) 0;
+    }
 }
 
 .single__content_reservation {
@@ -175,6 +331,14 @@
     outline: none;
     cursor: default;
 }
+@media (max-width: 1280px) {
+    #checkin,
+    #checkout {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 20rem) / (80 - 20)));
+        padding: 0 0 calc(0rem + (.33 - 0) * ((100vw - 20rem) / (80 - 20))) 0;
+        margin-bottom: calc(.66rem + (2 - .66) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 #late,
 #cleaning,
@@ -198,6 +362,12 @@
     line-height: 2rem;
     color: rgba(0, 0, 0, .66);
 }
+@media (max-width: 1280px) {
+    .single__content_services label {
+        font-size: calc(.8rem + (.9 - .8) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .services {
     display: flex;
@@ -212,6 +382,11 @@
     font-size: .9rem;
     line-height: 2rem;
 }
+@media (max-width: 1280px) {
+    .service__item {
+        line-height: calc(1.2rem + (2 - 1.2) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .service__price {
     width: 40%;
@@ -220,6 +395,21 @@
     font-size: .9rem;
     line-height: 2rem;
     color: #345E41;
+}
+@media (max-width: 1280px) {
+    .service__price {
+        font-size: calc(.8rem + (.9 - .8) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.2rem + (2 - 1.2) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.service__price span {
+    font-size: .9rem;
+}
+@media (max-width: 1280px) {
+    .service__price span {
+        font-size: calc(.8rem + (.9 - .8) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .your__price_left {
@@ -230,6 +420,13 @@
     color: rgba(0, 0, 0, 1);
     font-weight: 600;
 }
+@media (max-width: 1280px) {
+    .your__price_left {
+        font-size: calc(1.2rem + (1.5 - 1.2) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(3rem + (5.66 - 3) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
 .your__price_right {
     width: 40%;
     font-family: 'Prompt Reg', sans-serif;
@@ -238,6 +435,12 @@
     text-align: right;
     color: #345E41;
 }
+@media (max-width: 1280px) {
+    .your__price_right {
+        font-size: calc(1rem + (1.33 - 1) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(3rem + (5.66 - 3) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 #yourPrice {
     font-family: 'Prompt Reg', sans-serif;
@@ -245,6 +448,12 @@
     line-height: 5.66rem;
     text-align: right;
     color: #345E41;
+}
+@media (max-width: 1280px) {
+    #yourPrice {
+        font-size: calc(1rem + (1.33 - 1) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(3rem + (5.66 - 3) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .booking-link {
@@ -261,6 +470,15 @@
     width: 100%;
     display: inline-block;
     margin-bottom: 4rem;
+}
+@media (max-width: 1280px) {
+    .booking-link {
+        font-size: calc(.7rem + (.8 - .7) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.7rem + (.8 - .7) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(.5rem + (.8 - .5) * ((100vw - 20rem) / (80 - 20)))
+        calc(1.8rem + (1.8 - 1.8) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(1rem + (4 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .booking-link:hover {
@@ -288,6 +506,13 @@
     width: 1.66rem;
     transform: translateY(.5rem);
 }
+@media (max-width: 1280px) {
+    .weather__right img,
+    .weather__temp img {
+        width: calc(1rem + (1.66 - 1) * ((100vw - 20rem) / (80 - 20)));
+        transform: translateY(calc(.3rem + (.5 - .3) * ((100vw - 20rem) / (80 - 20))));
+    }
+}
 
 .weather__right p {
     font-family: 'Prompt Reg', sans-serif;
@@ -298,6 +523,16 @@
     color: rgba(0, 0, 0, .8);
     margin-bottom: .66rem;
 }
+@media (max-width: 1280px) {
+    .weather__right p {
+        line-height: calc(.8rem + (.9 - .8) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(.33rem + (.66 - .33) * ((100vw - 20rem) / (80 - 20)));
+    }
+
+    .weather__right p {
+        font-size: calc(.8rem + (.9 - .8) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .weather__temp {
     font-family: 'Prompt Reg', sans-serif;
@@ -306,12 +541,25 @@
     color: rgba(0, 0, 0, 1);
     font-weight: 600;
 }
+@media (max-width: 1280px) {
+    .weather__temp {
+        font-size: calc(.9rem + (1.5 - .9) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.5rem + (3 - 1.5) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
 
 .weather__left p {
     font-family: 'Prompt Reg', sans-serif;
     font-size: .9rem;
     line-height: 1.5rem;
     color: rgba(0, 0, 0, .8);
+}
+@media (max-width: 1280px) {
+    .weather__left p {
+        font-size: calc(.8rem + (.9 - .8) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.1rem + (1.5 - 1.1) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .campground {
@@ -322,19 +570,39 @@
     width: 100%;
     flex-wrap: wrap;
 }
+@media (max-width: 1280px) {
+    .campground {
+        padding-top: calc(.33rem + (1 - .33) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .campground__list {
     width: 35%;
+}
+@media (max-width: 950px) {
+    .campground__list {
+        width: 100%;
+    }
 }
 
 .campground_item {
     width: 100%;
     padding-bottom: .66rem;
 }
+@media (max-width: 1280px) {
+    .campground_item {
+        padding-bottom: calc(.2rem + (.66 - .2) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .campground_item img {
     width: 1.4rem;
     height: auto;
+}
+@media (max-width: 1280px) {
+    .campground_item img {
+        width: calc(1rem + (1.4 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .campground_item span {
@@ -346,10 +614,26 @@
     margin-left: .33rem;
     transform: translateY(-.33rem);
 }
+@media (max-width: 1280px) {
+    .campground_item span {
+        font-size: calc(.8rem + (.9 - .8) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.1rem + (1.5 - 1.1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .campground__image {
     width: 65%;
     padding-top: 3rem;
+}
+@media (max-width: 950px) {
+    .campground__image {
+        width: 100%;
+    }
+}
+@media (max-width: 1280px) {
+    .campground__image {
+        padding-top: calc(.33rem + (3 - .33) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .campground__image img {
@@ -360,6 +644,12 @@
     width: 100%;
     margin-bottom: .66rem;
 }
+@media (max-width: 1280px) {
+    .check-single {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(0rem + (.66 - 0) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .info-box {
     display: flex;
@@ -368,14 +658,36 @@
     width: 100%;
     border-bottom: 1px solid grey;
     padding-bottom: 4rem;
+    flex-wrap: wrap;
+}
+@media (max-width: 1280px) {
+    .info-box {
+        padding-bottom: calc(.66rem + (4 - .66) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .info-box_rules {
     width: 50%;
 }
+@media (max-width: 900px) {
+    .info-box_rules {
+        width: 100%;
+    }
+}
+
 .info-box_image {
     width: 40%;
     padding-top: 3rem;
+}
+@media (max-width: 1280px) {
+    .info-box_image {
+        padding-top: calc(.66rem + (3 - .66) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+@media (max-width: 900px) {
+    .info-box_image {
+        width: 100%;
+    }
 }
 
 .info-box_image img {

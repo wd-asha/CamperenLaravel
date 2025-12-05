@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.account')
 @section('title', 'Camperen | Account')
 @section('content')
 
@@ -19,7 +19,7 @@
     </div>
 
     <div class="container">
-        <div class="about" style="margin-top: 2rem;">
+        <div class="about">
             @if(session('order_yes'))
                 <div style="
                             font-size: 1rem;
@@ -46,25 +46,6 @@
             <div class="account-content">
                 <p>Hello, {{ Auth::user()->name }}</p>
                 <p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details</p>
-                {{--<form method="post" action="" class="change-form">
-                    @csrf
-                    <div class="change-form_item">
-                        <label for="name">Name</label>
-                        <input class="account-input readonly" type="text" placeholder="Your name *" value="{{ auth()->user()->name }}" name="name" readonly>
-                    </div>
-                    <div class="change-form_item">
-                        <label for="address">Address</label>
-                        <input class="account-input readonly" type="text" placeholder="Your Address" value="{{ auth()->user()->address }}" name="address" readonly>
-                    </div>
-                    <div class="change-form_item">
-                        <label for="email">Email</label>
-                        <input class="account-input readonly" type="email" placeholder="Your Email *" value="{{ auth()->user()->email }}" name="email" readonly>
-                    </div>
-                    <div class="change-form_item">
-                        <label for="address">Phone</label>
-                        <input class="account-input readonly" type="text" placeholder="Your Phone" value="{{ auth()->user()->phone }}" name="phone" readonly>
-                    </div>
-                </form>--}}
             </div>
         </div>
     </div>

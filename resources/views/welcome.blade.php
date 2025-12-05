@@ -2,11 +2,13 @@
 @section('title', 'Camperen | Main')
 @section('content')
 
+{{-- Слайдер на Главной --}}
+{{-- работу слайдера см. slider.js --}}
 <div class="slider">
     <div class="slide-empty">
         <img src="{{ asset('images/main-rev-2.jpg') }}" alt="">
     </div>
-    <div class="slide" id="slide1">
+    <div class="slide slide1" id="slide1">
         <div class="arrow-left" id="arrLeft1">
             <img src="{{ asset('images/arrow-left.png') }}" alt="">
         </div>
@@ -14,52 +16,44 @@
         <div class="slide__text">
             <div class="slide__above-title pos hide">Choose a healthy environment</div>
             <div class="slide__title pos hide">You can travel and work from any destination</div>
-            <a href="" class="slide__link pos hide">
-                <img src="{{ asset('images/icon-video-main.png') }}" class="slide__link-img" alt="">
-                watch the video
-            </a>
+            <a href="" class="slide__link pos hide">watch the video</a>
         </div>
         <div class="arrow-right" id="arrRight1">
             <img src="{{ asset('images/arrow-right.png') }}" alt="">
         </div>
     </div>
 
-    <div class="slide hide-slide" id="slide2">
+    <div class="slide slide2 hide-slide" id="slide2">
         <div class="arrow-left" id="arrLeft2">
             <img src="{{ asset('images/arrow-left.png') }}" alt="">
         </div>
         <img src="{{ asset('images/main-rev-3.jpg') }}" alt="">
-        <div class="slide__text">
+        <div class="slide__text slide__text2">
             <div class="slide__above-title pos hide">Travel with your soul</div>
             <div class="slide__title pos hide">Experience earth’s magic with your soulmate</div>
-            <a href="" class="slide__link pos hide">
-                <img src="{{ asset('images/icon-video-main.png') }}" class="slide__link-img" alt="">
-                watch the video
-            </a>
+            <a href="" class="slide__link pos hide">watch the video</a>
         </div>
         <div class="arrow-right" id="arrRight2">
             <img src="{{ asset('images/arrow-right.png') }}" alt="">
         </div>
     </div>
 
-    <div class="slide hide-slide" id="slide3">
+    <div class="slide slide3 hide-slide" id="slide3">
         <div class="arrow-left" id="arrLeft3">
             <img src="{{ asset('images/arrow-left.png') }}" alt="">
         </div>
         <img src="{{ asset('images/main-rev-1.jpg') }}" alt="">
-        <div class="slide__text">
+        <div class="slide__text slide__text3">
             <div class="slide__above-title pos hide">Nature benefits you</div>
             <div class="slide__title pos hide">Experience everything nature has to offer</div>
-            <a href="" class="slide__link pos hide">
-                <img src="{{ asset('images/icon-video-main.png') }}" class="slide__link-img" alt="">
-                watch the video
-            </a>
+            <a href="" class="slide__link pos hide">watch the video</a>
         </div>
         <div class="arrow-right" id="arrRight3">
             <img src="{{ asset('images/arrow-right.png') }}" alt="">
         </div>
     </div>
 </div>
+{{-- конец слайдер на главной --}}
 
 <div class="order">
     <form action="{{ route('show') }}" method="post" name="order-form" class="order__form">
@@ -118,16 +112,7 @@
 <div class="container">
     <div class="about">
         @if(session('order_yes'))
-            <div style="
-                            font-size: 1rem;
-                            line-height: 1.2rem;
-                            color: white;
-                            text-align: center;
-                            padding: 1rem;
-                            border: 1px solid white;
-                            transform: translateY(-3rem);
-                            background-color: darkgreen;
-                            opacity: .66">
+            <div class="order_yes">
                 {{ session('order_yes') }}
             </div>
         @endif

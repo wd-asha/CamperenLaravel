@@ -1,5 +1,5 @@
 @extends('layouts.single')
-@section('title', 'Camperen | Single')
+@section('title', 'Camperen | Reservation')
 @section('content')
 
 <div class="slider__single">

@@ -14,9 +14,7 @@
             <div class="slide__text">
                 <div class="slide__about_above-title">Connecting with nature</div>
                 <div class="slide__about-title">Change The<br>way you think</div>
-                <a href="" class="slide__link pos hide">
                     <a href="{{ route('accommodation') }}" class="about-link">check availability</a>
-                </a>
             </div>
         </div>
     </div>
@@ -104,15 +102,33 @@
                 <div class="zone__content zone__content_right">
                     <div class="zone__title text__right">Campground price list</div>
                     <div class="price-list">
-                        <p class="first">List</p><p class="second">Low season</p><p class="third">High season</p>
-                        <p class="first">Zone A, per person</p><p class="second">$15.00</p><p class="third">$17.00</p>
-                        <p class="first">Zone B, per person</p><p class="second">$10.00</p><p class="third">$13.00</p>
-                        <p class="first">Child (6-12 years)</p><p class="second">$7.00</p><p class="third">$9.00</p>
-                        <p class="first">Infants (0-5 years)</p><p class="second">Gratis</p class="third"><p>Gratis</p>
-                        <p class="first">Pet</p><p class="second">Free </p><p class="third">Free</p>
-                        <p class="first">Electricity</p><p class="second">$4.00</p><p class="third">$4.00</p>
-                        <p class="first">Internet connection</p><p class="second">Free</p><p class="third">Free</p>
-                        <p class="first">Vehicle on the plot</p><p class="second">$13</p><p class="third">$13</p>
+                        <p class="first">List</p>
+                        <p class="second">Low season</p>
+                        <p class="third">High season</p>
+                        <p class="first">Zone A, per person</p>
+                        <p class="second">$15.00</p>
+                        <p class="third">$17.00</p>
+                        <p class="first">Zone B, per person</p>
+                        <p class="second">$10.00</p>
+                        <p class="third">$13.00</p>
+                        <p class="first">Child (6-12 years)</p>
+                        <p class="second">$7.00</p>
+                        <p class="third">$9.00</p>
+                        <p class="first">Infants (0-5 years)</p>
+                        <p class="second">Gratis</p>
+                        <p class="third">Gratis</p>
+                        <p class="first">Pet</p>
+                        <p class="second">Free</p>
+                        <p class="third">Free</p>
+                        <p class="first">Electricity</p>
+                        <p class="second">$4.00</p>
+                        <p class="third">$4.00</p>
+                        <p class="first">Internet connection</p>
+                        <p class="second">Free</p>
+                        <p class="third">Free</p>
+                        <p class="first">Vehicle on the plot</p>
+                        <p class="second">$13</p>
+                        <p class="third">$13</p>
                     </div>
 
                 </div>

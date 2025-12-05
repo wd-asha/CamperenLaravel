@@ -293,8 +293,8 @@
 .booking__item-link_reverse {
     padding: .66rem 1.66rem;
     font-family: 'Prompt Reg', sans-serif;
-    font-size: .8rem;
-    line-height: .8rem;
+    font-size: .9rem;
+    line-height: .9rem;
     border: 1px solid #345E41;
     text-align: center;
     text-decoration: none;
@@ -304,6 +304,15 @@
     color: white;
     background-color: #345E41;
     width: auto;
+}
+@media (max-width: 1280px) {
+    .booking__item-link_reverse {
+        font-size: calc(.5rem + (.9 - .5) * ((100vw - 20rem) / (82 - 20)));
+        padding: calc(.2rem + (.9 - .2) * ((100vw - 20rem) / (82 - 20)))
+        calc(1rem + (1.66 - 1) * ((100vw - 20rem) / (82 - 20)))
+        calc(.2rem + (.9 - .2) * ((100vw - 20rem) / (82 - 20)))
+        calc(1rem + (1.66 - 1) * ((100vw - 20rem) / (82 - 20)));
+    }
 }
 
 .booking__item-link_reverse:hover {

@@ -1,6 +1,6 @@
 /*!Don't remove this!
  * jQuery DCalendar and DCalendar Picker plugin styles
- * 
+ *
  * Author: Dionlee Uy
  * Email: dionleeuy@gmail.com
  *
@@ -53,36 +53,81 @@
 			-moz-transform: translateX(-50%) scale(1.05);
 			-webkit-transform: translateX(-50%) scale(1.05);
 		}
+
 .calendar-head-card {
 	padding: 1rem;
-	width: 18rem;
+	width: 100%;
 }
-	.calendar-head-card .calendar-year,
-	.calendar-head-card .calendar-date-wrapper { 
-		color: white;
-		display: block;
-	}
-	.calendar-head-card .calendar-date-wrapper {
-		cursor: pointer;
-	}
-		.calendar-head-card .calendar-date-wrapper:hover { color: #fff; }
+@media (max-width: 1280px) {
+    .calendar-head-card {
+        padding: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.calendar-head-card .calendar-year,
+.calendar-head-card .calendar-date-wrapper {
+    color: white;
+    display: block;
+}
+@media (max-width: 1280px) {
+    .calendar-head-card .calendar-year,
+    .calendar-head-card .calendar-date-wrapper {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.calendar-head-card .calendar-date-wrapper {
+    cursor: pointer;
+}
+@media (max-width: 1280px) {
+    .calendar-head-card .calendar-date-wrapper {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+@media (max-width: 1280px) {
+    .calendar-month,
+    .calendar-dayofweek,
+    .calendar-date {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.calendar-head-card .calendar-date-wrapper:hover { color: #fff; }
+
 .calendar-container {
 	background-color: #fff;
 	padding: 1rem 1rem 1.5rem 1rem;
 	user-select: none;
-	width: 17.66rem;
+	width: 100%;
 }
+@media (max-width: 1280px) {
+    .calendar-container {
+        padding: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (80 - 20)))
+        calc(.5rem + (1 - .5) * ((100vw - 20rem) / (80 - 20)))
+        calc(0rem + (1.5 - 0) * ((100vw - 20rem) / (80 - 20)))
+        calc(.5rem + (1 - .5) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
 .calendar-top-selector {
 	display: table;
 	width: 100%;
 	color: rgb(50,50,50);
 }
-	.calendar-top-selector span {
-		display: table-cell;
-		text-align: center;
-		font-weight: bold;
-		cursor: pointer;
-	}
+
+.calendar-top-selector span {
+    display: table-cell;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width: 1280px) {
+    .calendar-top-selector span {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
 	.calendar-top-selector .calendar-curr-month { padding-bottom: 4px; }
 .calendar-next, .calendar-prev {
 	font-family: 'Times New Roman';
@@ -118,7 +163,7 @@
 			padding: 8px 0 4px 0;
 			vertical-align: middle;
 		}
-	.calendar-grid .calendar-date-holder { 
+	.calendar-grid .calendar-date-holder {
 		position: relative;
 		width: 100%;
 		height: 213px;
@@ -167,19 +212,23 @@
 		text-align: center;
 		color: rgb(50,50,50);
 	}
-		.calendar-date-holder .calendar-dates .date a {
-			text-decoration: none;
-			display: block;
-			color: inherit;
-			padding: 2px;
-		    margin: 1px;
-			outline: none;
-			border: 1px solid transparent;
-			transition: all .3s;
-			-o-transition: all .3s;
-			-moz-transition: all .3s;
-			-webkit-transition: all .3s;
-		}
+
+.calendar-date-holder .calendar-dates .date a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    padding: 2px;
+    margin: 1px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: all .3s;
+}
+@media (max-width: 1280px) {
+    .calendar-date-holder .calendar-dates .date a {
+       font-size: calc(.8rem + (1 - .8) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
     	.calendar-date-holder .calendar-dates .date.disabled a { cursor: not-allowed; color: rgb(200,200,200); }
 		.calendar-date-holder .calendar-dates .date:not(.disabled):not(.selected) a:hover { border-color: rgb(100,100,100); }
 		.calendar-date-holder .calendar-dates .date:not(.disabled):not(.selected) a:active { border-color: rgb(50,50,50); }

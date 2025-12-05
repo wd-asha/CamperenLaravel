@@ -48,7 +48,7 @@
                 <form action="{{ route('login') }}" class="login-form" method="post">
                     @csrf
                     <input type="hidden" id="return_url" value="{{ url()->current() }}" name="return_url">
-                    <input class="email-input" id="email" name="email"
+                    <input class="email-input" id="email_login" name="email"
                            placeholder="Email" value="{{ old('email') }}" required autofocus>
                     <input type="password" class="pass-input" id="passwordLogin"
                            name="password" placeholder="Password" required autocomplete="password">
@@ -72,7 +72,7 @@
                     @csrf
                     <input class="name-input" id="name" name="name"
                            placeholder="Name" value="{{ old('name') }}" required autofocus>
-                    <input class="email-input" id="email" name="email"
+                    <input class="email-input" id="email_reg" name="email"
                            placeholder="Email" value="{{ old('email') }}" required>
                     <input type="password" class="pass-input" id="password"
                            name="password" placeholder="Password" required autocomplete="new-password">
@@ -87,22 +87,29 @@
     </div>
 </div>
 
+<!-- Header -->
 <div class="bg-header">
     <div class="container">
         <div class="header" id="header">
+            <!-- Logo -->
             <a href="{{ route('welcome') }}" class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 59.6 68.9" style="enable-background:new 0 0 59.6 68.9;" xml:space="preserve">
-<g transform="translate(-358.49 -13696.639)">
-    <g transform="translate(0)">
-        <g transform="translate(9.714 12.465)">
-            <path class="st0" d="M378.6,13714.9c-0.6,1.9-6.2,10-10.6,11.8h0.6c1.4,0,2.5,1.1,2.5,2.5c0,1.4-1.1,2.5-2.5,2.5 c8.7,0,10-13.7,10-13.7"></path>
-        </g>
-        <path d="M378.3,13744.2h-4.4l-1.9-5c0,0,13.7-17.5,16.2-24.3c2.5,6.9,16.2,24.3,16.2,24.3l-1.9,5h-14.3
+                <svg
+                    x="0px" y="0px"
+                    viewBox="0 0 59.6 68.9"
+                    style="enable-background:new 0 0 59.6 68.9;"
+                    xml:space="preserve"
+                >
+                    <g transform="translate(-358.49 -13696.639)">
+                        <g transform="translate(0)">
+                            <g transform="translate(9.714 12.465)">
+                                <path class="st0" d="M378.6,13714.9c-0.6,1.9-6.2,10-10.6,11.8h0.6c1.4,0,2.5,1.1,2.5,2.5c0,1.4-1.1,2.5-2.5,2.5 c8.7,0,10-13.7,10-13.7"></path>
+                            </g>
+                            <path d="M378.3,13744.2h-4.4l-1.9-5c0,0,13.7-17.5,16.2-24.3c2.5,6.9,16.2,24.3,16.2,24.3l-1.9,5h-14.3
 			v-16.8"></path>
-        <path d="M403.7,13738.2c0,0,3.6,4.2,5.1,6"></path>
-        <path d="M372.5,13738.6c0,0-3.2,3.8-4.5,5.4"></path>
-    </g>
-</g>
+                            <path d="M403.7,13738.2c0,0,3.6,4.2,5.1,6"></path>
+                            <path d="M372.5,13738.6c0,0-3.2,3.8-4.5,5.4"></path>
+                        </g>
+                    </g>
                     <line x1="49.3" y1="40.5" x2="49.3" y2="19.8"></line>
                     <g>
                         <g transform="translate(5.3 1.069)">
@@ -127,25 +134,39 @@
 	c2.3,0,3.2-1.7,5.6-1.7c2.3,0,3.1,1.7,5.4,1.7c2.2,0,2.8-1.6,5.3-1.7c1.3,0,3,0.4,5.3,1.7"></path>
                     <path d="M16.5,60c2.8,0,3.9-1.8,6.7-1.8c2.7,0,3.7,1.7,6.5,1.8c2.8,0,4-1.7,6.9-1.7c2.9,0,3.9,1.7,6.7,1.7"></path>
                     <line x1="29.8" y1="18.3" x2="29.8" y2="15.2"></line>
-</svg>
+                </svg>
             </a>
-            <nav class="nav">
-                <div class="nav__left">
-                    <a href="{{ route('about') }}" class="nav__item">About Us</a><a href="{{ route('accommodation') }}" class="nav__item">Accommodation</a><a href="{{ route('contacts') }}" class="nav__item">Contacts</a><a href="{{ route('kids') }}" class="nav__item">Kids</a><a href="{{ route('blog') }}" class="nav__item">Blog</a>
+            {{-- end logo --}}
 
+            <!-- Navigation -->
+            <nav class="nav">
+                <!-- Основное меню -->
+                <div class="nav__left">
+                    <a href="{{ route('about') }}" class="nav__item">About Us</a>
+                    <a href="{{ route('accommodation') }}" class="nav__item">Accommodation</a>
+                    <a href="{{ route('contacts') }}" class="nav__item">Contacts</a>
+                    <a href="{{ route('kids') }}" class="nav__item">Kids</a>
+                    <a href="{{ route('blog') }}" class="nav__item">Blog</a>
+                    <!-- Burger -->
                     <div class="burger" id="burger">
                         <span></span><span></span><span></span>
                     </div>
-
+                    <!-- end burger -->
                 </div>
+                {{-- конец основного меню --}}
+                {{-- Меню авторизации --}}
                 <div class="nav__right">
                     @guest <a href="#popup" class="nav__item">Sign in</a> @endguest
-                    @auth <a href="{{ route('dashboard') }}" class="nav__item">Account</a> @endauth
+                    @auth <a href="{{ route('account') }}" class="nav__item">Account</a> @endauth
                 </div>
+                {{-- конец меню авторизации --}}
             </nav>
+            {{-- end navigation --}}
+
         </div>
     </div>
 </div>
+{{-- end header --}}
 
 @yield('content')
 
@@ -196,6 +217,8 @@
 </div>
 
 <script  src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{ asset('js/burger.js') }}"></script>
+<script src="{{ asset('js/login.js') }}"></script>
 <script  src="{{ asset('js/price.js') }}"></script>
 <script src="{{ asset('js/dcalendar.picker.js') }}"></script>
 <script>
@@ -214,7 +237,7 @@
     // Проверка на вхождение даты в список разрешённых
     function validateAllowed(input) {
         if (input.value && !allowedDates.includes(input.value)) {
-            alert("Эта дата недоступна");
+            alert("This date is not available");
             input.value = "";
             return false;
         }
@@ -240,7 +263,7 @@
             checkout.value = autoCheckout;
         } else {
             checkout.value = "";
-            alert("Нет доступных дат выезда после выбранной даты");
+            alert("There are no available departure dates after the selected date.");
         }
     });
 
@@ -249,7 +272,7 @@
         if (!validateAllowed(checkout)) return;
 
         if (checkout.value < checkin.value) {
-            alert("Дата выезда не может быть раньше даты заезда");
+            alert("The check-out date cannot be earlier than the check-in date");
             checkout.value = "";
         }
     });
@@ -296,33 +319,6 @@
             });
         }
     });
-</script>
-
-<script>
-    let loginTab = document.getElementById("loginTab");
-    let registerTab = document.getElementById("registerTab");
-    let resetPasswordTab = document.getElementById("resetPasswordTab");
-    let popupTextLogin = document.getElementById("popupTextLogin");
-    let popupTextReset = document.getElementById("popupTextReset");
-    let popupTextRegister = document.getElementById("popupTextRegister");
-
-    resetPasswordTab.addEventListener("click", function () {
-        popupTextRegister.classList.remove("display-block");
-        popupTextLogin.classList.remove("display-block");
-        popupTextReset.classList.add("display-block");
-    });
-
-    loginTab.addEventListener("click", function () {
-        popupTextRegister.classList.remove("display-block");
-        popupTextLogin.classList.add("display-block");
-        popupTextReset.classList.remove("display-block");
-    });
-
-    registerTab.addEventListener("click", function () {
-        popupTextRegister.classList.add("display-block");
-        popupTextLogin.classList.remove("display-block");
-        popupTextReset.classList.remove("display-block");
-    })
 </script>
 </body>
 </html>

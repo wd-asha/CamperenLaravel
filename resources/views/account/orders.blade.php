@@ -1,5 +1,5 @@
 {{-- аккаунт пользователя - заказы блюд --}}
-@extends('layouts.app')
+@extends('layouts.account')
 @section('content')
 
     <div class="slider">
@@ -19,18 +19,9 @@
     </div>
 
     <div class="container">
-        <div class="about" style="margin-top: 2rem;">
+        <div class="about">
             @if(session('order_yes'))
-                <div style="
-                            font-size: 1rem;
-                            line-height: 1.2rem;
-                            color: white;
-                            text-align: center;
-                            padding: 1rem;
-                            border: 1px solid white;
-                            transform: translateY(-3rem);
-                            background-color: darkgreen;
-                            opacity: .66">
+                <div class="order_yes">
                     {{ session('order_yes') }}
                 </div>
             @endif
@@ -49,30 +40,22 @@
                 @if($orders->isNotEmpty())
                     <div class="orders-place">
                         <div class="orders-item orders-captions">
-                            <span style="width:2%">ID</span>
-                            <span style="width:20%">Category</span>
+                            <span style="width:3%">ID</span>
+                            <span style="width:19%">Category</span>
                             <span style="width:15%">Date In</span>
-                            <span style="width:15%">Date Out</span>
-                            <span style="width:8%">Total</span>
-                            <span style="width:8%">Check</span>
+                            <span style="width:19%">Date Out</span>
+                            <span style="width:12%">Total</span>
                             <span style="width:11%">Status</span>
                             <span style="width:20%">Created</span>
                             <span style="width:2%"></span>
                         </div>
                         @foreach($orders as $order)
                             <div class="orders-item">
-                                <span style="width:2%">{{ $order->id }}</span>
-                                <span style="width:20%">{{ $order->category->title }}</span>
+                                <span style="width:3%">{{ $order->id }}</span>
+                                <span style="width:19%">{{ $order->category->title }}</span>
                                 <span style="width:15%">{{ $order->checkin }}</span>
-                                <span style="width:15%">{{ $order->checkout }}</span>
-                                <span style="width:8%">${{ $order->price}}</span>
-
-                                @if($order->checked == true)
-                                    <span style="width:8%">${{ $order->price}}</span>
-                                @elseif($order->checked == false)
-                                    <span style="width:8%">0</span>
-                                @endif
-
+                                <span style="width:19%">{{ $order->checkout }}</span>
+                                <span style="width:12%">${{ $order->price}}</span>
                                 <span style="width:11%">
                                     @if($order->status == true)
                                         @if($order->checked == false)

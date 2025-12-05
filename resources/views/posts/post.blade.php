@@ -1,7 +1,11 @@
-@extends('layouts.app')
+{{-- ПОСТ --}}
+{{-- Подключаем шаблон --}}
+@extends('layouts.post')
 @section('title', 'Camperen | Post')
 @section('content')
+    {{-- Контент сраницы --}}
     <div class="container">
+        {{-- Изображение поста в шапке --}}
         <div class="post__header">
             <div class="post-image-wrapper">
                 <img src="/media/images/{{ $post->image }}" alt="">
@@ -10,7 +14,8 @@
                 <div class="post__date">{{ $post->date }}</div>
             </div>
         </div>
-
+        {{-- конец изображения --}}
+        {{-- Контент поста --}}
         <div class="post">
             <div class="post__bred">{{ $post->tag }} | by {{ $post->author }}</div>
             <div class="post__title">{{ $post->title }}</div>
@@ -34,7 +39,8 @@
                 Curabitur eu sem id felis sollicitudin pellentesque. Cras sed leo augue. Vestibulum aliquet metus velit, quis vulputate ante suscipit eu. Aliquam in dictum lacus, id facilisis lacus. Pellentesque vitae varius lacus. Morbi porta turpis quis enim suscipit, et mattis nibh vulputate. Donec convallis vel lacus id gravida. Etiam sodales dignissim tellus, id hendrerit ligula ultrices sit amet. Cras commodo vitae ligula sed varius. Nullam semper felis quis quam rhoncus fermentum sit amet sit amet eros. t aliquam finibus mi, eget fringilla leo tempor id. Praesent mattis sodales
             </div>
         </div>
-
+        {{-- конец поста --}}
+        <!-- Автор -->
         <div class="author">
             <div class="author__image">
                 <img src="{{ asset('images/author.jpg') }}" alt="">
@@ -45,7 +51,8 @@
             </div>
         </div>
         <hr>
-
+        {{-- конец автор --}}
+        <!-- Комментарии -->
         <div class="comments">
             Comments
         </div>
@@ -69,8 +76,8 @@
                 <textarea name="comment" placeholder="Comment *"></textarea>
             </div>
             <div class="inputs">
-                <input type="text" class="post-input" name="user" id="user" placeholder="Name *">
-                <input type="text" class="post-input" name="email" id="email" placeholder="Email *">
+                <input type="text" class="post-input" name="user_comment" id="user_comment" placeholder="Name *">
+                <input type="text" class="post-input" name="email_comment" id="email_comment" placeholder="Email *">
             </div>
             <div class="check">
                 <input type="checkbox" id="check">
@@ -78,5 +85,8 @@
             </div>
             <a href="" class="blog__link">Post Comment</a>
         </div>
+        {{-- конец комментарии --}}
     </div>
+    {{--конец контента страницы--}}
 @endsection
+{{-- закрыли подключаемый шаблон --}}

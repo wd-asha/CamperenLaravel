@@ -12,11 +12,11 @@
                 <div class="overlay__kids"></div>
             </div>
             <div class="slide__text_posts">
-                <div class="slide__posts-title">EXPERIENCE<br>FREEDOM</div>
+                <div class="slide__posts-title">EXPERIENCE FREEDOM</div>
                 <div class="slide__posts_subtitle">Experience the true beauty of nature and create new memoires with family and friends</div>
-                <a href="" class="slide__link">
+
                     <a href="" class="about-link">check availability</a>
-                </a>
+
             </div>
         </div>
     </div>

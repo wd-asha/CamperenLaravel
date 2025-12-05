@@ -2,7 +2,6 @@ $(function() {
     $("#slide2").fadeOut(100);
     $("#slide3").fadeOut(100);
 
-
     function shiftText() {
         setTimeout(function () {
             $(".slide__above-title").show(600).removeClass('hide');

@@ -34,7 +34,7 @@
 .popup__area {
     position: absolute;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     top: 0;
     left: 0;
 }
@@ -54,22 +54,24 @@
     width: 25rem;
     padding: 2.5rem;
     position: relative;
-    transform: translate(0, -200%);
+    transform: translate(0, -300%);
     opacity: 0;
     transition: .5s;
 }
 @media (max-width: 1280px) {
     .popup__content {
-        width: calc(16rem + (25 - 16) * ((100vw - 20rem) / (80 - 20)));
-        padding: calc(1rem + (2.5 - 1) * ((100vw - 20rem) / (80 - 20)));
+        width: calc(16rem + (25 - 16) * ((100vw - 20rem) / (71.11 - 20)));
+        padding: calc(1rem + (2.5 - 1) * ((100vw - 20rem) / (71.11 - 20)));
     }
 }
 
 .popup__body {
     min-height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
+    /*padding: 2rem;*/
+    overflow-x: hidden;
 }
 
 .popup__close {
@@ -82,6 +84,12 @@
     text-decoration: none;
     font-size: 1rem;
 }
+@media (max-width: 1280px) {
+    .popup__close {
+        top: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (71.11 - 20)));
+        right: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (71.11 - 20)));
+    }
+}
 
 .popup__close:hover {
     color: darkred;
@@ -89,7 +97,7 @@
 
 .popup__titles {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -103,12 +111,13 @@
     cursor: pointer;
     transition: .5s;
     margin-bottom: 2rem;
+    margin-right: 2rem;
 }
 @media (max-width: 1280px) {
     .popup__title {
-        font-size: calc(.75rem + (1.1 - .75) * ((100vw - 20rem) / (80 - 20)));
-        line-height: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20)));
-        margin-bottom: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20)));
+        font-size: calc(.75rem + (1.1 - .75) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(1rem + (2 - 1) * ((100vw - 20rem) / (71.11 - 20)));
+        margin-bottom: calc(1rem + (2 - 1) * ((100vw - 20rem) / (71.11 - 20)));
     }
 }
 
@@ -147,10 +156,10 @@
     .name-input,
     .email-input,
     .pass-input {
-        font-size: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (80 - 20)));
-        line-height: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (80 - 20)));
-        padding: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (80 - 20)));
-        margin-bottom: calc(.5rem + (1.33 - .5) * ((100vw - 20rem) / (80 - 20)));
+        font-size: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (71.11 - 20)));
+        padding: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (71.11 - 20)));
+        margin-bottom: calc(.5rem + (1.33 - .5) * ((100vw - 20rem) / (71.11 - 20)));
     }
 }
 
@@ -184,9 +193,9 @@
 @media (max-width: 1280px) {
     .popup__text_reset p.personal-data,
     .popup__text_register p.personal-data {
-        font-size: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (80 - 20)));
-        line-height: calc(.9rem + (1.33 - .9) * ((100vw - 20rem) / (80 - 20)));
-        margin-bottom: calc(.66rem + (1.33 - .66) * ((100vw - 20rem) / (80 - 20)));
+        font-size: calc(.7rem + (.9 - .7) * ((100vw - 20rem) / (71.11 - 20)));
+        line-height: calc(.9rem + (1.33 - .9) * ((100vw - 20rem) / (71.11 - 20)));
+        margin-bottom: calc(.66rem + (1.33 - .66) * ((100vw - 20rem) / (71.11 - 20)));
     }
 }
 

@@ -11,11 +11,9 @@
             <img src="{{ asset('images/kids-01.jpg') }}" alt="">
             <div class="overlay__kids"></div>
         </div>
-        <div class="slide__text">
+        <div class="slide__text__kids">
             <div class="slide__title_kids pos hide">Best Summer<br>camp for kids</div>
-            <a href="" class="slide__link pos hide">
                 <a href="" class="booking__item-link_kids">check availability</a>
-            </a>
         </div>
     </div>
 </div>
@@ -126,4 +124,5 @@
         </div>
     </div>
 </div>
+
 @endsection

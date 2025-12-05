@@ -1,5 +1,5 @@
 {{-- аккаунт пользователя - изменить --}}
-@extends('layouts.app')
+@extends('layouts.account')
 @section('content')
 
     <div class="slider">
@@ -19,7 +19,7 @@
     </div>
 
     <div class="container">
-        <div class="about" style="margin-top: 2rem;">
+        <div class="about">
             @if(session('order_yes'))
                 <div style="
                             font-size: 1rem;
@@ -30,7 +30,7 @@
                             border: 1px solid white;
                             transform: translateY(-3rem);
                             background-color: darkgreen;
-                            opacity: .66">
+                            opacity: .66;">
                     {{ session('order_yes') }}
                 </div>
             @endif
@@ -94,7 +94,6 @@
                         >
                     </div>
                     <div class="change-form_item">
-                        <label class="labelBtn" for="btn">btn</label>
                         <button class="button-submit" type="submit">Save</button>
                     </div>
                 </form>

@@ -206,14 +206,18 @@ gsap.fromTo('.third',
         }
     });
 
+/* паралакс текста (explore__text) относительно изображения (explore)*/
 gsap.registerPlugin(ScrollTrigger);
 gsap.to(".explore__text", {
-    yPercent: 50, // Текст движется медленнее
+    yPercent: 40,
     ease: "none",
     scrollTrigger: {
         trigger: ".explore",
-        start: "top bottom", // Когда верх .explore достигнет низа viewport
-        end: "bottom top",   // Когда низ .explore достигнет верха viewport
-        scrub: true // Плавное следование за скроллом
+        // Когда верх explore достигнет низа viewport
+        start: "top bottom",
+        // Когда низ explore достигнет верха viewport
+        end: "bottom top",
+        // Плавное следование за скроллом
+        scrub: true
     }
 });

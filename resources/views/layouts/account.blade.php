@@ -1,3 +1,4 @@
+{{-- Шаблон Аккаунта --}}
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -84,68 +85,29 @@
     </div>
 </div>
 
-<div class="overlay"></div>
-<div class="popup" id="popup">
-    <a href="#header" class="popup__area"></a>
-    <div class="popup__body">
-        <div class="popup__content">
-            <a href="#header" class="popup__close">X</a>
-            <div class="popup__titles">
-                <div class="popup__title title-active" id="loginTab">Login</div>
-                <div class="popup__title" id="registerTab">Register</div>
-                <div class="popup__title" id="resetPasswordTab">Reset&nbsp;Password</div>
-            </div>
-            <div class="popup__text_login display-block" id="popupTextLogin">
-                <form action="" class="login-form">
-                    <label for="emailInputLogin"></label>
-                    <input class="email-input" id="emailInputLogin" placeholder="Email">
-                    <label for="passInputLogin"></label>
-                    <input class="pass-input" id="passInputLogin" placeholder="Password">
-                    <button type="submit" name="submit" class="contacts__link">Login</button>
-                </form>
-            </div>
-            <div class="popup__text_reset" id="popupTextReset">
-                <form action="" class="login-form">
-                    <label for="emailInputLogin"></label>
-                    <input class="email-input" id="emailInputReset" placeholder="Email">
-                    <p class="personal-data">Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.</p>
-                    <button type="submit" name="submit" class="contacts__link">Reset Password</button>
-                </form>
-            </div>
-            <div class="popup__text_register" id="popupTextRegister">
-                <form action="" class="login-form">
-                    <label for="nameInputRegister"></label>
-                    <input class="name-input" id="nameInputRegister" placeholder="Name">
-                    <label for="emailInputRegister"></label>
-                    <input class="email-input" id="emailInputRegister" placeholder="Email">
-                    <label for="passInputRegister"></label>
-                    <input class="pass-input" id="passInputRegister" placeholder="Password">
-                    <label for="passInputRegister"></label>
-                    <input class="pass-input" id="passInputRepeat" placeholder="Repeat Password">
-                    <p class="personal-data">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
-                    <button type="submit" name="submit" class="contacts__link">Register</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
+<!-- Header -->
 <div class="bg-header">
     <div class="container">
         <div class="header" id="header">
+            <!-- Logo -->
             <a href="{{ route('welcome') }}" class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 59.6 68.9" style="enable-background:new 0 0 59.6 68.9;" xml:space="preserve">
-<g transform="translate(-358.49 -13696.639)">
-    <g transform="translate(0)">
-        <g transform="translate(9.714 12.465)">
-            <path class="st0" d="M378.6,13714.9c-0.6,1.9-6.2,10-10.6,11.8h0.6c1.4,0,2.5,1.1,2.5,2.5c0,1.4-1.1,2.5-2.5,2.5 c8.7,0,10-13.7,10-13.7"></path>
-        </g>
-        <path d="M378.3,13744.2h-4.4l-1.9-5c0,0,13.7-17.5,16.2-24.3c2.5,6.9,16.2,24.3,16.2,24.3l-1.9,5h-14.3
+                <svg
+                    x="0px" y="0px"
+                    viewBox="0 0 59.6 68.9"
+                    style="enable-background:new 0 0 59.6 68.9;"
+                    xml:space="preserve"
+                >
+                    <g transform="translate(-358.49 -13696.639)">
+                        <g transform="translate(0)">
+                            <g transform="translate(9.714 12.465)">
+                                <path class="st0" d="M378.6,13714.9c-0.6,1.9-6.2,10-10.6,11.8h0.6c1.4,0,2.5,1.1,2.5,2.5c0,1.4-1.1,2.5-2.5,2.5 c8.7,0,10-13.7,10-13.7"></path>
+                            </g>
+                            <path d="M378.3,13744.2h-4.4l-1.9-5c0,0,13.7-17.5,16.2-24.3c2.5,6.9,16.2,24.3,16.2,24.3l-1.9,5h-14.3
 			v-16.8"></path>
-        <path d="M403.7,13738.2c0,0,3.6,4.2,5.1,6"></path>
-        <path d="M372.5,13738.6c0,0-3.2,3.8-4.5,5.4"></path>
-    </g>
-</g>
+                            <path d="M403.7,13738.2c0,0,3.6,4.2,5.1,6"></path>
+                            <path d="M372.5,13738.6c0,0-3.2,3.8-4.5,5.4"></path>
+                        </g>
+                    </g>
                     <line x1="49.3" y1="40.5" x2="49.3" y2="19.8"></line>
                     <g>
                         <g transform="translate(5.3 1.069)">
@@ -170,9 +132,13 @@
 	c2.3,0,3.2-1.7,5.6-1.7c2.3,0,3.1,1.7,5.4,1.7c2.2,0,2.8-1.6,5.3-1.7c1.3,0,3,0.4,5.3,1.7"></path>
                     <path d="M16.5,60c2.8,0,3.9-1.8,6.7-1.8c2.7,0,3.7,1.7,6.5,1.8c2.8,0,4-1.7,6.9-1.7c2.9,0,3.9,1.7,6.7,1.7"></path>
                     <line x1="29.8" y1="18.3" x2="29.8" y2="15.2"></line>
-</svg>
+                </svg>
             </a>
+            {{-- end logo --}}
+
+            <!-- Navigation -->
             <nav class="nav">
+                <!-- Основное меню -->
                 <div class="nav__left">
                     <a href="{{ route('about') }}" class="nav__item">About Us</a>
                     <a href="{{ route('accommodation') }}" class="nav__item">Accommodation</a>
@@ -185,14 +151,20 @@
                     </div>
                     <!-- end burger -->
                 </div>
+                {{-- конец основного меню --}}
+                {{-- Меню авторизации --}}
                 <div class="nav__right">
                     @guest <a href="#popup" class="nav__item">Sign in</a> @endguest
-                    @auth <a href="{{ route('dashboard') }}" class="nav__item">Account</a> @endauth
+                    @auth <a href="{{ route('account') }}" class="nav__item">Account</a> @endauth
                 </div>
+                {{-- конец меню авторизации --}}
             </nav>
+            {{-- end navigation --}}
+
         </div>
     </div>
 </div>
+{{-- end header --}}
 
 @yield('content')
 
@@ -225,9 +197,9 @@
                     @csrf
                     <input type="email" name="email" placeholder="You Email">
                     @if (Auth::check()) {
-                    <button class="submit-link" type="submit">
-                        <img src="{{ asset('images/arrow.png') }}" alt="">
-                    </button>
+                        <button class="submit-link" type="submit">
+                            <img src="{{ asset('images/arrow.png') }}" alt="">
+                        </button>
                     @else
                         {{--Пользователь не вошел в систему--}}
                     @endif
@@ -238,39 +210,54 @@
     </div>
 </div>
 
+<div class="copy-right">
+    <a href="https://wd-asha.ru">wd-asha</a>
+</div>
+
 <script  src="{{ asset('js/jquery.js') }}"></script>
-<script src="{{ asset('js/slider.js') }}"></script>
+{{--<script src="{{ asset('js/slider.js') }}"></script>--}}
 <script src="{{ asset('js/burger.js') }}"></script>
 <script src="{{ asset('js/login.js') }}"></script>
+<script src="{{ asset('js/account.js') }}"></script>
+
 <!-- GSAP core -->
 <script src="{{ asset('js/gsap.min.js') }}"></script>
-<!-- ScrollTrigger plugin (обязательно) -->
+<!-- ScrollTrigger -->
 <script src="{{ asset('js/ScrollTrigger.min.js') }}"></script>
-{{--<script src="{{ asset('js/activity-anim.js') }}"></script>--}}
 
 <script>
-    // Убедиться, что плагин зарегистрирован
-    gsap.registerPlugin(ScrollTrigger);
+    // сохранить scroll при уходе со страницы
+    window.addEventListener('beforeunload', function () {
+        localStorage.setItem('scrollPos', window.scrollY);
+    });
 
-    // Отложенный запуск, чтобы элемент точно в DOM (альтернатива: поместить скрипт в конец body — мы уже там)
-    document.addEventListener('DOMContentLoaded', () => {
-        gsap.utils.toArray('.booking__item').forEach(item => {
-            gsap.fromTo(item,
-                { opacity: 0, y: 50 },
-                {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.8,
-                    ease: "power2.out",
-                    scrollTrigger: {
-                        trigger: item,
-                        start: "top 75%",   // середина элемента достигает середины экрана
-                        // start: "top center"     // вариант: когда верх элемента в центре экрана
-                        toggleActions: "play none none reverse",
-                    }
-                }
-            );
-        });
+    window.addEventListener('load', function () {
+        const saved = localStorage.getItem('scrollPos');
+        if (!saved || saved < 50) return; // ничего не делать, если позиция слишком маленькая
+
+        const position = parseInt(saved);
+
+        // этап 1: плавно прокрутить вверх (если человек вернулся назад глубоко)
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // этап 2: после небольшого тайм-аута — мягко прокрутить вниз
+        setTimeout(() => {
+            window.scrollTo({
+                top: position,
+                behavior: 'smooth'
+            });
+        }, 1500); // можно увеличить/уменьшить для другой динамики
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const logoutLink = document.querySelector('a[onclick*="logout-form"]');
+        if (logoutLink) {
+            logoutLink.addEventListener('click', function () {
+                localStorage.removeItem('scrollPos');
+            });
+        }
     });
 </script>
 

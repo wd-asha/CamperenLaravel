@@ -1,3 +1,16 @@
+.slide__text__kids {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 470px) {
+    .slide__text__kids {
+        width: 80%;
+    }
+}
+
 .slide__title_kids {
     font-size: 4.33rem;
     line-height: 4.66rem;
@@ -9,6 +22,14 @@
     visibility: visible;
     text-transform: uppercase;
     font-weight: 600;
+    width: 100%;
+}
+@media (max-width: 1280px) {
+    .slide__title_kids {
+        font-size: calc(1rem + (4.33 - 1) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.2rem + (4.66 - 1.2) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(.66rem + (5 - .66) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .booking__item-link_kids {
@@ -63,6 +84,13 @@
     padding: 2rem 0 1rem 0;
     color: rgba(0, 0, 0, .8);
 }
+@media (max-width: 1280px) {
+    .blog__title_kids {
+        font-size: calc(1.2rem + (1.5 - 1.2) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.2rem + (1.5 - 1.2) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(.33rem + (2 - .33) * ((100vw - 20rem) / (80 - 20))) 0 1rem 0;
+    }
+}
 
 .parallax__slide {
     position: relative;
@@ -95,6 +123,13 @@
     font-weight: 600;
     text-align: left;
     margin-bottom: 3rem;
+}
+@media (max-width: 1280px) {
+    .parallax__slide h3 {
+        font-size: calc(1rem + (4 - 1) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1rem + (4 - 1) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(.33rem + (3 - .33) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 #parallax__slide2 h3 {
